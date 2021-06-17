@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Arbitrage</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="img/favicon.ico">
     <link rel="apple-touch-icon" sizes="72x72" href="img/favicon.ico">
@@ -12,6 +13,7 @@
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+    <div id="all">
     <header class="main_head">
         <div class="top_head">
             <nav>
@@ -35,10 +37,10 @@
                 <img src="img/logo-title.png" alt="Alt">
             </div>
             <div class="descr">Научим зарабатывать от 500$ в месяц прямо сейчас</div>
-            <div class="text_head">
+            <!--<div class="text_head">
                 <p><span>Топ 1</span> в сфере теневого арбитража трафика</p>
                 <p><span>Более 8 лет опыта</span> в теневом арбитраже. Научим зарабатывать с нуля.</p>
-            </div>
+            </div>-->
             <a href="#" class="btn btn_tg btn_head"><img src="img/telegram.svg" alt="Alt" class="svg"> Перейти в Telegram канал</a>
         </div>
     </header>
@@ -137,50 +139,20 @@
             <h2>Научим зарабатывать на теневом арбитраже</h2>
             <div class="descr">Успей забронировать места на обучение уже сейчас!</div>
             <div class="wrap_tariff">
-                <div class="item_tariff flip-container" ontouchstart="this.classList.toggle('hover');">
-                    <div class="flipper">
-                        <div class="front">
-                            <div class="image_tariff">
-                                <img src="img/tariff-1.png" alt="Alt">
-                            </div>
-                            <div class="text_tariff">
-                                <img src="img/tariff-title-1.png" alt="Alt">
-                            </div>
-                        </div>
-                        <div class="back">
-                            <div class="title_tariff">Standart</div>
-                            <ul>
-                                <li>- Самая актуальная информация по фроду ПП</li>
-                                <li>- Видеоконференции со всей группой</li>
-                                <li>- Приватный канал в Telegram</li>
-                                <li>- Приватный чат в Telegram</li>
-                                <li>- Браузер от Dark Arbitrage бесплатно</li>
-                                <li>- Доведение до результата 500$ в месяц</li>
-                            </ul>
-                        </div>
+                <div class="item_tariff">
+                    <div class="image_tariff">
+                        <img src="img/tariff-1.png" alt="Alt">
+                    </div>
+                    <div class="text_tariff">
+                        <img src="img/tariff-title-1.png" alt="Alt">
                     </div>
                 </div>
-                <div class="item_tariff flip-container" ontouchstart="this.classList.toggle('hover');">
-                    <div class="flipper">
-                        <div class="front">
-                            <div class="image_tariff">
-                                <img src="img/tariff-2.png" alt="Alt">
-                            </div>
-                            <div class="text_tariff">
-                                <img src="img/tariff-title-2.png" alt="Alt">
-                            </div>
-                        </div>
-                        <div class="back">
-                            <div class="title_tariff">VIP</div>
-                            <ul>
-                                <li>- Все бонусы тарифа Standart</li>
-                                <li>- Личный менеджер для каждого ученика</li>
-                                <li>- Персональное время проведения лекций</li>
-                                <li>- VIP ученики первыми получают обновления</li>
-                                <li>- Полный пакет софта от Dark Arbitrage</li>
-                                <li>- Доведение до результата 1000$ в месяц</li>
-                            </ul>
-                        </div>
+                <div class="item_tariff">
+                    <div class="image_tariff">
+                        <img src="img/tariff-2.png" alt="Alt">
+                    </div>
+                    <div class="text_tariff">
+                        <img src="img/tariff-title-2.png" alt="Alt">
                     </div>
                 </div>
             </div>
@@ -211,6 +183,7 @@
             </div>
         </div>
     </footer>
+    </div>
 	
     <script src="js/libs.min.js"></script>
     <script src="js/scrollbox.function.js"></script>
@@ -219,5 +192,18 @@
     <script>
 		document.querySelector('.content-box').scrollTo(0, 1470);
 	</script>
+    <script type="text/javascript">
+        var elm = document.getElementById('all'); // all -- элемент, в который был обернут весь сайт
+        var coeff = document.body.clientWidth/elm.offsetWidth; // считаем коэффициент масштабирования так, чтобы элемент all занял весь экран
+        if (coeff>1) coeff=1; // нам нужно только уменьшение сайта, но не его увеличение, поэтому ограничиваем коэффициент сверху единицей
+        if (coeff<0.6) coeff=0.6; // ограничение снизу добавлено для того, чтобы сайт совсем уж не превращался в нечитаемый
+        if (coeff!=1.0) {
+          if (navigator.userAgent.indexOf('Firefox')!=-1) elm.style.boxShadow='none';  // масштабирование в Firefox порождало некорректное отображение boxshadow, и пришлось это свойство отключить
+          elm.style.webkitTransform = 
+          elm.style.msTransform = 
+          elm.style.mozTransform = 
+          elm.style.transform = 'scale('+coeff+')'; // собственно масштабирование
+        }
+        </script>
 </body>
 </html>
