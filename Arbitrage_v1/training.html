@@ -35,10 +35,10 @@
             <div class="wrapper">
                 <h1>Обучение в Dark Arbitrage</h1>
                 <div class="descr">Следующий поток стартует через:</div>
-                <div class="date_training">
-                    <div class="day_training"><span>6</span> д</div>
-                    <div class="hour_training"><span>23</span> ч</div>
-                    <div class="minute_training"><span>00</span> м</div>
+                <div id="date" class="date_training">
+                    <div id="day" class="day_training"><span></span> д</div>
+                    <div id="hour" class="hour_training"><span></span> ч</div>
+                    <div id="minute" class="minute_training"><span></span> м</div>
                 </div>
                 <div class="text_training">
                     <p>Размер потока ограничен!</p>
@@ -204,5 +204,30 @@
     <script>
 		new WOW().init();
 	</script>
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Sep 5, 2021 15:37:25").getTime();
+        
+        // Update the count down every 1 second
+        var countdownfunction = setInterval(function() {
+        
+            // Get todays date and time
+            var now = new Date().getTime();
+            
+            // Find the distance between now an the count down date
+            var distance = countDownDate - now;
+            
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            
+            // Output the result in an element with id="demo"
+            document.getElementById("day").innerHTML = days + " д";
+            document.getElementById("hour").innerHTML = hours + " ч"
+            document.getElementById("minute").innerHTML = minutes + " м";
+            
+        }, 1000);
+    </script>
 </body>
 </html>

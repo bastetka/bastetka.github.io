@@ -121,10 +121,10 @@
         <div class="wrapper">
             <h2>Обучение в Dark Arbitrage</h2>
             <div class="descr">Следующий поток стартует через:</div>
-            <div class="date_training">
-                <div class="day_training"><span>6</span> д</div>
-                <div class="hour_training"><span>23</span> ч</div>
-                <div class="minute_training"><span>00</span> м</div>
+            <div id="date" class="date_training">
+                <div id="day" class="day_training"><span></span> д</div>
+                <div id="hour" class="hour_training"><span></span> ч</div>
+                <div id="minute" class="minute_training"><span></span> м</div>
             </div>
             <div class="text_training">
                 <p>Размер потока ограничен!</p>
@@ -260,18 +260,30 @@
     <script>
 		document.querySelector('.content-box').scrollTo(0, 1470);
 	</script>
-    <script type="text/javascript">
-        var elm = document.getElementById('all'); // all -- элемент, в который был обернут весь сайт
-        var coeff = document.body.clientWidth/elm.offsetWidth; // считаем коэффициент масштабирования так, чтобы элемент all занял весь экран
-        if (coeff>1) coeff=1; // нам нужно только уменьшение сайта, но не его увеличение, поэтому ограничиваем коэффициент сверху единицей
-        if (coeff<0.6) coeff=0.6; // ограничение снизу добавлено для того, чтобы сайт совсем уж не превращался в нечитаемый
-        if (coeff!=1.0) {
-          if (navigator.userAgent.indexOf('Firefox')!=-1) elm.style.boxShadow='none';  // масштабирование в Firefox порождало некорректное отображение boxshadow, и пришлось это свойство отключить
-          elm.style.webkitTransform = 
-          elm.style.msTransform = 
-          elm.style.mozTransform = 
-          elm.style.transform = 'scale('+coeff+')'; // собственно масштабирование
-        }
-        </script>
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Sep 5, 2021 15:37:25").getTime();
+        
+        // Update the count down every 1 second
+        var countdownfunction = setInterval(function() {
+        
+            // Get todays date and time
+            var now = new Date().getTime();
+            
+            // Find the distance between now an the count down date
+            var distance = countDownDate - now;
+            
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            
+            // Output the result in an element with id="demo"
+            document.getElementById("day").innerHTML = days + " д";
+            document.getElementById("hour").innerHTML = hours + " ч"
+            document.getElementById("minute").innerHTML = minutes + " м";
+            
+        }, 1000);
+    </script>
 </body>
 </html>
