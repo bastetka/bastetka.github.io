@@ -10,6 +10,7 @@
     <link rel="apple-touch-icon" sizes="72x72" href="img/favicon.ico">
     <link rel="apple-touch-icon" sizes="114x114" href="img/favicon.ico">
     <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -83,7 +84,12 @@
                     <a href="#" class="btn">записаться</a>
                 </div>
             </div>
+        </div> 
+        <div class="bg_video">
+            <video autoplay="" muted="" playsinline="" loop="" src="img/bg-video.mp4"></video>
         </div>
+        <div class="overlay_head"></div>
+   </div>
     </section>
     <section class="description">
         <div class="wrapper">
@@ -102,7 +108,7 @@
                     <div class="icon_advan">
                         <img src="img/advan-about-1.png" alt="Alt">
                     </div>
-                    <p>Организуем Мафию на вашем мероприятии уже в день обращения! Берём на себя все заботы по поиску площадки, подготовке программы и реквизита.</p>
+                    <p>Организуем Мафию на вашем мероприятии уже в день обращения! Берём на себя все заботы по поиску площадки и разработке программы.</p>
                 </div>
                 <div class="item_advan">
                     <div class="icon_advan">
@@ -144,10 +150,10 @@
             <div class="wrap_advantages">
                 <div class="item_advantages">
                     <div class="image_advantages">
-                        <img src="img/advantages-1.png" alt="Alt">
+                        <img src="img/advantages-3.png" alt="Alt">
                     </div>
-                    <div class="title_advantages">Совместимо с любым мероприятием и банкетом</div>
-                    <p>От уютных посиделок за бокалом вина до ярких вечеринок с микрофонами. Знаем, как увлечь Мафией всех. Хоть <span>7</span>, хоть <span>1000 участников</span>. Артистичные ведущие, авторский реквизит, стильные фото, сотни вариантов программ.</p>
+                    <div class="title_advantages">Играть в мафию проще чем кажется</div>
+                    <p><span>Две минуты</span>, чтобы понять правила, и вы <span>«в теме»</span>. Опытные ведущие готовы прокачать вас до уровня «профи», никто не останется без внимания. С освоением Мафии справится даже ребёнок.</p>
                 </div>
                 <div class="item_advantages">
                     <div class="image_advantages">
@@ -158,10 +164,10 @@
                 </div>
                 <div class="item_advantages">
                     <div class="image_advantages">
-                        <img src="img/advantages-3.png" alt="Alt">
+                        <img src="img/advantages-1.png" alt="Alt">
                     </div>
-                    <div class="title_advantages">Играть в мафию проще чем кажется</div>
-                    <p><span>Две минуты</span>, чтобы понять правила, и вы <span>«в теме»</span>. Опытные ведущие готовы прокачать вас до уровня «профи», никто не останется без внимания. С освоением Мафии справится даже ребёнок.</p>
+                    <div class="title_advantages">Совместимо с любым мероприятием и банкетом</div>
+                    <p>От уютных посиделок за бокалом вина до ярких вечеринок с микрофонами. Знаем, как увлечь Мафией всех. Хоть <span>7</span>, хоть <span>1000 участников</span>. Артистичные ведущие, авторский реквизит, стильные фото, сотни вариантов программ.</p>
                 </div>
                 <div class="item_advantages">
                     <div class="image_advantages">
@@ -192,50 +198,120 @@
             <h2>Присоединяйтесь к клану мафиози</h2>
             <div class="subtitle">Интересно, кем вы будете в игре?</div>
         </div>
-        <div class="wrap_clan">
+        <div class="wrap_clan scroll_bar defaultscroll">
             <div class="item_clan">
-                <div class="video_clan">
-                    <img src="img/clan-3.png" alt="Alt">
-                </div>
-            </div>
-            <div class="item_clan">
-                <div class="video_clan">
+                <a href="#video_clan-0" class="video_clan">
                     <img src="img/clan-1.png" alt="Alt">
-                </div>
-                <div class="video_clan">
+                    <div class="hidden">
+                        <div class="popup_clan" id="video_clan-0">
+                            <div class="video_block">
+                                <iframe width="100%" height="315" src="https://www.youtube.com/embed/Q2IRXHTeIQE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="item_clan">
+                <a href="#video_clan-1" class="video_clan">
                     <img src="img/clan-2.png" alt="Alt">
-                </div>
-            </div>
-            <div class="item_clan">
-                <div class="video_clan">
+                    <div class="hidden">
+                        <div class="popup_clan" id="video_clan-1">
+                            <div class="video_block">
+                                <iframe width="100%" height="315" src="https://www.youtube.com/embed/YMUi2GlIfbw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#video_clan-2" class="video_clan">
                     <img src="img/clan-3.png" alt="Alt">
-                </div>
+                    <div class="hidden">
+                        <div class="popup_clan" id="video_clan-2">
+                            <div class="video_block">
+                                <iframe width="100%" height="315" src="https://www.youtube.com/embed/BIg-JWWcV6k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </a>
             </div>
             <div class="item_clan">
-                <div class="video_clan">
+                <a href="#video_clan-3" class="video_clan">
                     <img src="img/clan-4.png" alt="Alt">
-                </div>
-                <div class="video_clan">
+                    <div class="hidden">
+                        <div class="popup_clan" id="video_clan-3">
+                            <div class="video_block">
+                                <iframe width="100%" height="315" src="https://www.youtube.com/embed/QA6RlZ4PeoI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="item_clan">
+                <a href="#video_clan-4" class="video_clan">
                     <img src="img/clan-5.png" alt="Alt">
-                </div>
-            </div>
-            <div class="item_clan">
-                <div class="video_clan">
+                    <div class="hidden">
+                        <div class="popup_clan" id="video_clan-4">
+                            <div class="video_block">
+                                <iframe width="100%" height="315" src="https://www.youtube.com/embed/h3OI98If13c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#video_clan-5" class="video_clan">
                     <img src="img/clan-6.png" alt="Alt">
-                </div>
+                    <div class="hidden">
+                        <div class="popup_clan" id="video_clan-5">
+                            <div class="video_block">
+                                <iframe width="100%" height="315" src="https://www.youtube.com/embed/_cuIeew7CmQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </a>
             </div>
             <div class="item_clan">
-                <div class="video_clan">
+                <a href="#video_clan-6" class="video_clan">
                     <img src="img/clan-7.png" alt="Alt">
-                </div>
-                <div class="video_clan">
-                    <img src="img/clan-8.png" alt="Alt">
-                </div>
+                    <div class="hidden">
+                        <div class="popup_clan" id="video_clan-6">
+                            <div class="video_block">
+                                <iframe width="100%" height="315" src="https://www.youtube.com/embed/ZXh4b4Dnfew" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </a>
             </div>
             <div class="item_clan">
-                <div class="video_clan">
-                    <img src="img/clan-6.png" alt="Alt">
-                </div>
+                <a href="#video_clan-7" class="video_clan">
+                    <img src="img/clan-8.png" alt="Alt">
+                    <div class="hidden">
+                        <div class="popup_clan" id="video_clan-7">
+                            <div class="video_block">
+                                <iframe width="100%" height="315" src="https://www.youtube.com/embed/gBLjZRwK08w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#video_clan-8" class="video_clan">
+                    <img src="img/clan-9.png" alt="Alt">
+                    <div class="hidden">
+                        <div class="popup_clan" id="video_clan-8">
+                            <div class="video_block">
+                                <iframe width="100%" height="315" src="https://www.youtube.com/embed/qJHSZ7qkm74" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="item_clan">
+                <a href="#video_clan-9" class="video_clan">
+                    <img src="img/clan-10.png" alt="Alt">
+                    <div class="hidden">
+                        <div class="popup_clan" id="video_clan-9">
+                            <div class="video_block">
+                                <iframe width="100%" height="315" src="https://www.youtube.com/embed/x_qpVwNQoKk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </a>
             </div>
         </div>
         <a href="#" class="btn">Да, я хочу так же!</a>
@@ -263,13 +339,13 @@
                 <img src="img/bg-tariff-2.png" alt="Alt">
                 <div class="title_tariff">Premium мафия</div>
                 <div class="text_tariff">
-                    <p>Ежедневные игры в открытом офлайн-формате. Играем всегда, играм везде, играем с новичками и профи. Игра прохо- дит в особой дружеской атмосфере и практически лишена ограничений. От вас требуется только желание играть!</p>
+                    <p>Самый красивый проект Беларуси предлагает вам получить приглашение в мир успешных мужчин и обаятельных женщин. В месяц проходит 2 игры и закрытая вечеринка для членов клуба.</p>
                     <ul class="wrap_checklist">
-                        <li class="item_checklist">Открытый формат для всех любителей Мафии</li>
-                        <li class="item_checklist">Прекрасная возможность для новых знакомств</li>
+                        <li class="item_checklist">VIP-вариант для ценителей самого лучшего</li>
+                        <li class="item_checklist">Закрытый формат с эксклюзивными возможностями</li>
                     </ul>
                     <p class="text_hidden">VIP-вариант для ценителей самого лучшего</p>
-                    <a href="mafia-club.html" class="btn">Подробнее</a>
+                    <a href="mafia-premium.html" class="btn">Подробнее</a>
                 </div>
             </div>
         </div>
@@ -294,58 +370,58 @@
                         <li class="item_checklist">Необычное и веселое мероприятие «под ключ» даже в день обращения</li>
                         <li class="item_checklist">Объединяет коллектив, развивает навыки коммуникации</li>
                     </ul>
-                    <a href="mafia-club.html" class="btn">Подробнее</a>
+                    <a href="mafia-corporate.html" class="btn">Подробнее</a>
                 </div>
             </div>
             <div class="item_views">
                 <img src="img/view-2.png" alt="Alt">
-                <div href="#" class="text_views">
+                <div class="text_views">
                     <div class="icon_views">
                         <img src="img/icon-view-2.png" alt="Alt">
                     </div>
                     <div class="title_views">Мафия на День рождения</div>
                 </div>
                 <div class="inner_views">
-                    <p>Идеальный вариант для <span>тимбилдинга и корпоратива</span>. Задумывались над тем, как организовать праздник по-новому? Мы организуем для вас правильную атмосферу, подберём помещение и поможем сделать вечер незабываемым.</p>
+                    <p>Специальный формат для праздников. Этот вечер с Мафией именинник будет вспоминать долгие годы. А если его спросят, какой самый необычный подарок он получал в жизни, то он ответит без промедлений и с огнём в глазах!</p>
                     <ul class="wrap_checklist">
-                        <li class="item_checklist">Необычное и веселое мероприятие «под ключ» даже в день обращения</li>
-                        <li class="item_checklist">Объединяет коллектив, развивает навыки коммуникации</li>
+                        <li class="item_checklist">Пожалуй, самый необычный и яркий подарок</li>
+                        <li class="item_checklist">От яркого Дня рождения с мафией до медийного праздника с эксклюзивной программой</li>
                     </ul>
-                    <a href="mafia-club.html" class="btn">Подробнее</a>
+                    <a href="mafia-birthday.html" class="btn">Подробнее</a>
                 </div>
             </div>
             <div class="item_views">
                 <img src="img/view-3.png" alt="Alt">
-                <div href="mafia-children.html" class="text_views">
+                <div class="text_views">
                     <div class="icon_views">
                         <img src="img/icon-view-3.png" alt="Alt">
                     </div>
                     <div class="title_views">Детская мафия</div>
                 </div>
                 <div class="inner_views">
-                    <p>Идеальный вариант для <span>тимбилдинга и корпоратива</span>. Задумывались над тем, как организовать праздник по-новому? Мы организуем для вас правильную атмосферу, подберём помещение и поможем сделать вечер незабываемым.</p>
+                    <p>Особый вариант для детского праздника или дня рождения. Дипломированные ведущие сделают всё, чтобы ваш ребёнок и его друзья остались в восторге, а специальная атрибутика, костюмы и подарки наполнят праздник яркими красками.</p>
                     <ul class="wrap_checklist">
-                        <li class="item_checklist">Необычное и веселое мероприятие «под ключ» даже в день обращения</li>
-                        <li class="item_checklist">Объединяет коллектив, развивает навыки коммуникации</li>
+                        <li class="item_checklist">Такой праздник запомнится ребенку на всю жизнь</li>
+                        <li class="item_checklist">Ведущие обучены работать с детьми любого возраста</li>
                     </ul>
-                    <a href="mafia-club.html" class="btn">Подробнее</a>
+                    <a href="mafia-children.html" class="btn">Подробнее</a>
                 </div>
             </div>
             <div class="item_views">
                 <img src="img/view-4.png" alt="Alt">
-                <div href="mafia-online.html" class="text_views">
+                <div class="text_views">
                     <div class="icon_views">
                         <img src="img/icon-view-4.png" alt="Alt">
                     </div>
                     <div class="title_views">Онлайн-мафия</div>
                 </div>
                 <div class="inner_views">
-                    <p>Идеальный вариант для <span>тимбилдинга и корпоратива</span>. Задумывались над тем, как организовать праздник по-новому? Мы организуем для вас правильную атмосферу, подберём помещение и поможем сделать вечер незабываемым.</p>
+                    <p>Поддерживайте связь с коллегами и укрепляйте связи с партнерами, дарите своим родственникам захватывающий День рождения, пока они за границей! Собирайтесь вместе за веселой игрой, даже если вы сейчас в разных городах и странах. С вас – только стабильный интернет, а веселое настроение мы организуем сами.</p>
                     <ul class="wrap_checklist">
-                        <li class="item_checklist">Необычное и веселое мероприятие «под ключ» даже в день обращения</li>
-                        <li class="item_checklist">Объединяет коллектив, развивает навыки коммуникации</li>
+                        <li class="item_checklist">Мы готовы организовать игру на английском языке</li>
+                        <li class="item_checklist">Убойный вариант для карантинов и плохой погоды</li>
                     </ul>
-                    <a href="mafia-club.html" class="btn">Подробнее</a>
+                    <a href="mafia-online.html" class="btn">Подробнее</a>
                 </div>
             </div>
         </div>
@@ -357,35 +433,195 @@
             <h2>Мы завоевали любовь авторитетных гостей</h2>
             <div class="subtitle">Наши потрясающие клиенты:</div>
             <div class="carousel carousel_clients">
-                <div class="item_clients">
-                    <img src="img/client-1.png" alt="Alt">
+                <div>
+                    <div class="item_clients">
+                        <img src="img/qulix.png" alt="Alt">
+                    </div>
                 </div>
-                <div class="item_clients">
-                    <img src="img/client-2.png" alt="Alt">
+                <div>
+                    <div class="item_clients">
+                        <img src="img/logo-2.png" alt="Alt">
+                    </div>
                 </div>
-                <div class="item_clients">
-                    <img src="img/client-3.png" alt="Alt">
+                <div>
+                    <div class="item_clients">
+                        <img src="img/logo-3.png" alt="Alt">
+                    </div>
                 </div>
-                <div class="item_clients">
-                    <img src="img/client-4.png" alt="Alt">
+                <div>
+                    <div class="item_clients">
+                        <img src="img/logo-4.png" alt="Alt">
+                    </div>
                 </div>
-                <div class="item_clients">
-                    <img src="img/client-5.png" alt="Alt">
+                <div>
+                    <div class="item_clients">
+                        <img src="img/logo-5.png" alt="Alt">
+                    </div>
                 </div>
-                <div class="item_clients">
-                    <img src="img/client-6.png" alt="Alt">
+                <div>
+                    <div class="item_clients">
+                        <img src="img/logo-6.png" alt="Alt">
+                    </div>
                 </div>
-                <div class="item_clients">
-                    <img src="img/client-7.png" alt="Alt">
+                <div>
+                    <div class="item_clients">
+                        <img src="img/logo-7.png" alt="Alt">
+                    </div>
                 </div>
-                <div class="item_clients">
-                    <img src="img/client-8.png" alt="Alt">
+                <div>
+                    <div class="item_clients">
+                        <img src="img/logo-8.png" alt="Alt">
+                    </div>
                 </div>
-                <div class="item_clients">
-                    <img src="img/client-1.png" alt="Alt">
+                <div>
+                    <div class="item_clients">
+                        <img src="img/logo-9.png" alt="Alt">
+                    </div>
                 </div>
-                <div class="item_clients">
-                    <img src="img/client-2.png" alt="Alt">
+                <div>
+                    <div class="item_clients">
+                        <img src="img/logo-10.png" alt="Alt">
+                    </div>
+                </div>
+                <div>
+                    <div class="item_clients">
+                        <img src="img/logo-11.png" alt="Alt">
+                    </div>
+                </div>
+                <div>
+                    <div class="item_clients">
+                        <img src="img/logo-12.png" alt="Alt">
+                    </div>
+                </div>
+                <div>
+                    <div class="item_clients">
+                        <img src="img/logo-13.png" alt="Alt">
+                    </div>
+                </div>
+                <div>
+                    <div class="item_clients">
+                        <img src="img/logo-14.png" alt="Alt">
+                    </div>
+                </div>
+                <div>
+                    <div class="item_clients">
+                        <img src="img/logo-15.png" alt="Alt">
+                    </div>
+                </div>
+                <div>
+                    <div class="item_clients">
+                        <img src="img/logo-16.png" alt="Alt">
+                    </div>
+                </div>
+                <div>
+                    <div class="item_clients">
+                        <img src="img/logo-17.png" alt="Alt">
+                    </div>
+                </div>
+                <div>
+                    <div class="item_clients">
+                        <img src="img/logo-18.png" alt="Alt">
+                    </div>
+                </div>
+                <div>
+                    <div class="item_clients">
+                        <img src="img/logo-19.png" alt="Alt">
+                    </div>
+                </div>
+                <div>
+                    <div class="item_clients">
+                        <img src="img/logo-20.png" alt="Alt">
+                    </div>
+                </div>
+                <div>
+                    <div class="item_clients">
+                        <img src="img/logo-21.png" alt="Alt">
+                    </div>
+                </div>
+                <div>
+                    <div class="item_clients">
+                        <img src="img/logo-22.png" alt="Alt">
+                    </div>
+                </div>
+                <div>
+                    <div class="item_clients">
+                        <img src="img/logo-23.png" alt="Alt">
+                    </div>
+                </div>
+                <div>
+                    <div class="item_clients">
+                        <img src="img/logo-24.png" alt="Alt">
+                    </div>
+                </div>
+                <div>
+                    <div class="item_clients">
+                        <img src="img/logo-25.png" alt="Alt">
+                    </div>
+                </div>
+                <div>
+                    <div class="item_clients">
+                        <img src="img/logo-26.png" alt="Alt">
+                    </div>
+                </div>
+                <div>
+                    <div class="item_clients">
+                        <img src="img/logo-27.png" alt="Alt">
+                    </div>
+                </div>
+                <div>
+                    <div class="item_clients">
+                        <img src="img/logo-28.png" alt="Alt">
+                    </div>
+                </div>
+                <div>
+                    <div class="item_clients">
+                        <img src="img/logo-29.png" alt="Alt">
+                    </div>
+                </div>
+                <div>
+                    <div class="item_clients">
+                        <img src="img/logo-30.png" alt="Alt">
+                    </div>
+                </div>
+                <div>
+                    <div class="item_clients">
+                        <img src="img/logo-31.png" alt="Alt">
+                    </div>
+                </div>
+                <div>
+                    <div class="item_clients">
+                        <img src="img/logo-32.png" alt="Alt">
+                    </div>
+                </div>
+                <div>
+                    <div class="item_clients">
+                        <img src="img/logo-33.png" alt="Alt">
+                    </div>
+                </div>
+                <div>
+                    <div class="item_clients">
+                        <img src="img/logo-34.png" alt="Alt">
+                    </div>
+                </div>
+                <div>
+                    <div class="item_clients">
+                        <img src="img/logo-35.png" alt="Alt">
+                    </div>
+                </div>
+                <div>
+                    <div class="item_clients">
+                        <img src="img/logo-36.png" alt="Alt">
+                    </div>
+                </div>
+                <div>
+                    <div class="item_clients">
+                        <img src="img/logo-37.png" alt="Alt">
+                    </div>
+                </div>
+                <div>
+                    <div class="item_clients">
+                        <img src="img/logo-38.png" alt="Alt">
+                    </div>
                 </div>
             </div>
         </div>
@@ -397,55 +633,103 @@
         </div>
         <div class="wrap_portfolio">
             <div class="item_portfolio">
-                <img src="img/portfolio-1.png" alt="Alt">
-                <div class="title_portfolio">Криптовечеринка</div>
+                <img src="img/portfolio-1.jpg" alt="Alt">
+                <div class="title_portfolio">Afterparty-игры для Hilti</div>
             </div>
             <div class="item_portfolio">
-                <img src="img/portfolio-2.png" alt="Alt">
-                <div class="title_portfolio">Afterparty игры для Hilti</div>
+                <img src="img/portfolio-2.jpg" alt="Alt">
+                <div class="title_portfolio">Premium mafia</div>
             </div>
             <div class="item_portfolio">
-                <img src="img/portfolio-3.png" alt="Alt">
-                <div class="title_portfolio">ДР Константина в Куршевеле</div>
-            </div>
-            <div class="item_portfolio">
-                <img src="img/portfolio-4.png" alt="Alt">
-                <div class="title_portfolio">Мафия онлайн</div>
-            </div>
-            <div class="item_portfolio">
-                <img src="img/portfolio-5.png" alt="Alt">
-                <div class="title_portfolio">Ежемесячные игры для LeverX Group</div>
-            </div>
-            <div class="item_portfolio">
-                <img src="img/portfolio-6.png" alt="Alt">
-                <div class="title_portfolio">Выпускники MBA</div>
-            </div>
-            <div class="item_portfolio">
-                <img src="img/portfolio-7.png" alt="Alt">
-                <div class="title_portfolio">Premium Mafia</div>
-            </div>
-            <div class="item_portfolio">
-                <img src="img/portfolio-8.png" alt="Alt">
-                <div class="title_portfolio">Тимбилдинг Goozix</div>
-            </div>
-            <div class="item_portfolio">
-                <img src="img/portfolio-9.png" alt="Alt">
+                <img src="img/portfolio-3.jpg" alt="Alt">
                 <div class="title_portfolio">Вечеринка на ДР Дмитрия</div>
             </div>
             <div class="item_portfolio">
-                <img src="img/portfolio-10.png" alt="Alt">
+                <img src="img/portfolio-4.jpg" alt="Alt">
+                <div class="title_portfolio">Волк с Уолл-Стрит</div>
+            </div>
+            <div class="item_portfolio">
+                <img src="img/portfolio-5.jpg" alt="Alt">
+                <div class="title_portfolio">Тимбилдинг Goozix</div>
+            </div>
+            <div class="item_portfolio">
+                <img src="img/portfolio-6.jpg" alt="Alt">
+                <div class="title_portfolio">ДР в Куршевеле</div>
+            </div>
+            <div class="item_portfolio">
+                <img src="img/portfolio-7.jpg" alt="Alt">
+                <div class="title_portfolio">#криптовечеринка</div>
+            </div>
+            <div class="item_portfolio">
+                <img src="img/portfolio-8.jpg" alt="Alt">
+                <div class="title_portfolio">Мафия-online</div>
+            </div>
+            <div class="item_portfolio">
+                <img src="img/portfolio-9.jpg" alt="Alt">
+                <div class="title_portfolio">ДР Вячеслава</div>
+            </div>
+            <div class="item_portfolio">
+                <img src="img/portfolio-10.jpg" alt="Alt">
+                <div class="title_portfolio">Вечеринка на ДР Александра</div>
+            </div>
+            <div class="item_portfolio">
+                <img src="img/portfolio-11.jpg" alt="Alt">
+                <div class="title_portfolio">Выпускной MBA</div>
+            </div>
+            <div class="item_portfolio">
+                <img src="img/portfolio-12.jpg" alt="Alt">
+                <div class="title_portfolio">Детская мафия</div>
+            </div>
+            <div class="item_portfolio">
+                <img src="img/portfolio-13.jpg" alt="Alt">
+                <div class="title_portfolio">Ежемесячные игры для LeverX Group</div>
+            </div>
+            <div class="item_portfolio">
+                <img src="img/portfolio-14.jpg" alt="Alt">
+                <div class="title_portfolio">Мюзикл</div>
+            </div>
+            <div class="item_portfolio">
+                <img src="img/portfolio-15.jpg" alt="Alt">
+                <div class="title_portfolio">Клиентское мероприятие Omega Tower</div>
+            </div>
+            <div class="item_portfolio">
+                <img src="img/portfolio-16.jpg" alt="Alt">
                 <div class="title_portfolio">Вечеринка Bosch</div>
             </div>
             <div class="item_portfolio">
-                <img src="img/portfolio-11.png" alt="Alt">
-                <div class="title_portfolio">Др Елены</div>
+                <img src="img/portfolio-17.jpg" alt="Alt">
+                <div class="title_portfolio">Peaky Blinders</div>
             </div>
             <div class="item_portfolio">
-                <img src="img/portfolio-12.png" alt="Alt">
-                <div class="title_portfolio">Детская мафия</div>
+                <img src="img/portfolio-18.jpg" alt="Alt">
+                <div class="title_portfolio">Квиз ВТБ</div>
+            </div>
+            <div class="item_portfolio">
+                <img src="img/portfolio-19.jpg" alt="Alt">
+                <div class="title_portfolio">Летний корпоратив Itransition</div>
+            </div>
+            <div class="item_portfolio">
+                <img src="img/portfolio-20.jpg" alt="Alt">
+                <div class="title_portfolio">ДР Елены</div>
+            </div>
+            <div class="item_portfolio">
+                <img src="img/portfolio-21.jpg" alt="Alt">
+                <div class="title_portfolio">Тимбилдинг Borjomi</div>
+            </div>
+            <div class="item_portfolio">
+                <img src="img/portfolio-22.jpg" alt="Alt">
+                <div class="title_portfolio">Incognita</div>
+            </div>
+            <div class="item_portfolio">
+                <img src="img/portfolio-23.jpg" alt="Alt">
+                <div class="title_portfolio">Клуб Литераторов</div>
+            </div>
+            <div class="item_portfolio">
+                <img src="img/portfolio-24.jpg" alt="Alt">
+                <div class="title_portfolio">Мафия на Каzантип</div>
             </div>
         </div>
-        <a href="#" class="btn">Ещё больше проектов с Мафией</a>
+        <a href="#" class="btn more_portfolio">Ещё больше проектов с Мафией</a>
     </section>
     <section class="about">
         <div class="wrapper">
@@ -458,7 +742,7 @@
                     </div>
                     <div class="name_about"><span>Сергей Искандер,</span> основатель клуба «Mafia Vero» в Минске</div>
                     <div class="links_about">
-                        <a href="#" class="btn">Гимн клуба «Mafia Vero»</a>
+                        <a href="#" class="btn btn_play">Гимн клуба «Mafia Vero»</a>
                         <a href="#" class="link_insta">@sergeyiskander</a>
                     </div>
                 </div>
@@ -493,13 +777,27 @@
                 <div>
                     <div class="item_testimonials">
                         <div class="image_testimonials">
-                            <img src="img/photo-testimonials.png" alt="Alt">
+                            <img src="img/1.jpg" alt="Alt">
                         </div>
                         <div class="text_testimonials">
-                            <p>Большое спасибо за игры в «Мафию»! Играли два раза, с Сергеем и Анастасией. Отличные ребята, создают непринужденную, веселую атмосферу. Находят свой подход к каждому! Нам понравилось. Теперь если играть в «Мафию», то только с профессиональными ведущими. Отдельное спасибо фотографу за веселую непринужденную фотосессию с атрибутами мафиози!</p>
+                            <p>Очень красивые реквизиты, добавляют антуражности игре «Мафия», ведущий объясняет четко и понятно все условия игры. Спасибо, очень понравилась активация.</p>
                             <div class="foot_testimonials">
-                                <div class="name_testimonials">Иванна Владимирова</div>
-                                <div class="company_testimonials">Название компании</div>
+                                <div class="name_testimonials">Ольга</div>
+                                <div class="company_testimonials">Terra Group</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                <div class="item_testimonials">
+                        <div class="image_testimonials">
+                            <img src="img/2.jpg" alt="Alt">
+                        </div>
+                        <div class="text_testimonials">
+                            <p>Профессиально. Стильно. Захватывающе!</p>
+                            <div class="foot_testimonials">
+                                <div class="name_testimonials">Алёна</div>
+                                <div class="company_testimonials">Itransition</div>
                             </div>
                         </div>
                     </div>
@@ -507,13 +805,13 @@
                 <div>
                     <div class="item_testimonials">
                         <div class="image_testimonials">
-                            <img src="img/photo-testimonials.png" alt="Alt">
+                            <img src="img/3.jpg" alt="Alt">
                         </div>
                         <div class="text_testimonials">
-                            <p>Большое спасибо за игры в «Мафию»! Играли два раза, с Сергеем и Анастасией. Отличные ребята, создают непринужденную, веселую атмосферу. Находят свой подход к каждому! Нам понравилось. Теперь если играть в «Мафию», то только с профессиональными ведущими. Отдельное спасибо фотографу за веселую непринужденную фотосессию с атрибутами мафиози!</p>
+                            <p>Большое спасибо за игры в «Мафию»! Играли два раза, с Сергеем и Анастасией. Отличные ребята, создают непринужденную, веселую атмосферу. Находят свой подход к каждому! Нам понравилось. Теперь если в играть в «Мафию», то только с профессиональными ведущими. Отдельное спасибо фотографу за веселую непринужденную фотосессию с атрибутами мафиози!</p>
                             <div class="foot_testimonials">
-                                <div class="name_testimonials">Иванна Владимирова</div>
-                                <div class="company_testimonials">Название компании</div>
+                                <div class="name_testimonials">Анна</div>
+                                <div class="company_testimonials">Европейский банк реконструкции и развития</div>
                             </div>
                         </div>
                     </div>
@@ -521,13 +819,308 @@
                 <div>
                     <div class="item_testimonials">
                         <div class="image_testimonials">
-                            <img src="img/photo-testimonials.png" alt="Alt">
+                            <img src="img/4.jpg" alt="Alt">
                         </div>
                         <div class="text_testimonials">
-                            <p>Большое спасибо за игры в «Мафию»! Играли два раза, с Сергеем и Анастасией. Отличные ребята, создают непринужденную, веселую атмосферу. Находят свой подход к каждому! Нам понравилось. Теперь если играть в «Мафию», то только с профессиональными ведущими. Отдельное спасибо фотографу за веселую непринужденную фотосессию с атрибутами мафиози!</p>
+                            <p>Изначально у нас даже были сомнения по поводу проведения «Мафии» в офисе, но рискнув мы ничуть не пожалели. Ребята играли до победного конца и еще долго вспоминали игру после мероприятия. Очень красива организация, прекрасные игровые атрибуты и невероятно харизматичный ведущий сделали наш вечер очень крутым.</p>
                             <div class="foot_testimonials">
-                                <div class="name_testimonials">Иванна Владимирова</div>
-                                <div class="company_testimonials">Название компании</div>
+                                <div class="name_testimonials">Дарья</div>
+                                <div class="company_testimonials">Apalon</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="item_testimonials">
+                        <div class="image_testimonials">
+                            <img src="img/5.jpg" alt="Alt">
+                        </div>
+                        <div class="text_testimonials">
+                            <p>Проводили «Мафию» на летнем корпоративе за городом на 400 человек. Все прошло хорошо. Ведущие были очень артистические, создавали атмосферу реальной мафии, реквизит отлично дополнял активацию. Сотрудники с удовольствием оставались поиграть еще после первой игры, так как игра действительно затягивает, хочется еще и еще.
+                            Всем советуем.</p>
+                            <div class="foot_testimonials">
+                                <div class="name_testimonials">Милана</div>
+                                <div class="company_testimonials">Qulix Systems</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="item_testimonials">
+                        <div class="image_testimonials">
+                            <img src="img/6.jpg" alt="Alt">
+                        </div>
+                        <div class="text_testimonials">
+                            <p>Обращались к «Mafia Vero» для корпоративного праздника. Все было на высшем уровне. Благодаря профессионализму ведущих и реалистичному реквизиту, атмосфера игры погрузила участников в образ на 100%. Впечатления «вау». Всем рекомендую.</p>
+                            <div class="foot_testimonials">
+                                <div class="name_testimonials">Степан</div>
+                                <div class="company_testimonials">John Dory</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="item_testimonials">
+                        <div class="image_testimonials">
+                            <img src="img/7.jpg" alt="Alt">
+                        </div>
+                        <div class="text_testimonials">
+                            <p>Приятно всегда провести время в отличной компании! Потренировать мозг стратегическим мышлением и просто пообщаться с позитивными людьми!</p>
+                            <div class="foot_testimonials">
+                                <div class="name_testimonials">Олег Лабуть</div>
+                                <div class="company_testimonials">Основатель Viva Braslav</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="item_testimonials">
+                        <div class="image_testimonials">
+                            <img src="img/8.jpg" alt="Alt">
+                        </div>
+                        <div class="text_testimonials">
+                            <p>Крутая идея для дня рождения, если хочется чего-то необычного, ну и друзей узнать получше. Очень весело, креативно и интересно, 4 часа пролетели незаметно, а эмоциями делились много недель после. Идеальная организация, крутейшие аксессуары, полное погружение в процесс, харизматичный ведущий.</p>
+                            <div class="foot_testimonials">
+                                <div class="name_testimonials">Елена</div>
+                                <div class="company_testimonials"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="item_testimonials">
+                        <div class="image_testimonials">
+                            <img src="img/9.jpg" alt="Alt">
+                        </div>
+                        <div class="text_testimonials">
+                            <p>Пользовался услугами данных мафиози... Что сказать! Только один сплошной позитив! Были у меня дома на закрытом мероприятии и на Банковском VIP-слете! Высокий уровень организации игры, тонкий подход к клиенту и его пожеланиям, система бонусов и скидок! Желаю команде успехов и процветания!</p>
+                            <div class="foot_testimonials">
+                                <div class="name_testimonials">Игорь</div>
+                                <div class="company_testimonials">БПС-Сбербанк</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="item_testimonials">
+                        <div class="image_testimonials">
+                            <img src="img/10.jpg" alt="Alt">
+                        </div>
+                        <div class="text_testimonials">
+                            <p>«Мафия» – интеллектуальная игра, которая делает офисные будни немного ярче. Примерить несвойственный тебе образ, вжиться в него и поучаствовать в настоящем театрализованном шоу стало возможным благодаря клубу «Mafia Vero». Спасибо за интересный и простой в реализации формат тимбилдинга, а также внимательный подход к каждой детали – от гангстерских шляп до реалистичных пистолетов.</p>
+                            <div class="foot_testimonials">
+                                <div class="name_testimonials">Татьяна</div>
+                                <div class="company_testimonials">iTechArt Group</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="item_testimonials">
+                        <div class="image_testimonials">
+                            <img src="img/12.jpg" alt="Alt">
+                        </div>
+                        <div class="text_testimonials">
+                            <p>Игра, которая щекочет нервы и развивает дар убеждения.</p>
+                            <div class="foot_testimonials">
+                                <div class="name_testimonials">Андрей Ткачёв</div>
+                                <div class="company_testimonials">Блогер</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="item_testimonials">
+                        <div class="image_testimonials">
+                            <img src="img/13.jpg" alt="Alt">
+                        </div>
+                        <div class="text_testimonials">
+                            <p>От лица сотрудников компании LeverX Group благодарю команду «Mafia Vero» за высокий уровень организации наших корпоративных игр и за активное вовлечение Сергея Искандера в сам процесс!</p>
+                            <div class="foot_testimonials">
+                                <div class="name_testimonials">Юлия</div>
+                                <div class="company_testimonials">LeverX Group</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="item_testimonials">
+                        <div class="image_testimonials">
+                            <img src="img/14.jpg" alt="Alt">
+                        </div>
+                        <div class="text_testimonials">
+                            <p>С «Mafia Vero» нам всегда весело и легко!</p>
+                            <div class="foot_testimonials">
+                                <div class="name_testimonials">Алёна</div>
+                                <div class="company_testimonials">Альмус Медиа Бай</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="item_testimonials">
+                        <div class="image_testimonials">
+                            <img src="img/15.jpg" alt="Alt">
+                        </div>
+                        <div class="text_testimonials">
+                            <p>Нам здесь нравится! Отличная возможность разбавить рабочие будни и развеяться в отличной компании.</p>
+                            <div class="foot_testimonials">
+                                <div class="name_testimonials">Сергей Лапковский</div>
+                                <div class="company_testimonials">Ведущий</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="item_testimonials">
+                        <div class="image_testimonials">
+                            <img src="img/16.jpg" alt="Alt">
+                        </div>
+                        <div class="text_testimonials">
+                            <p>Благодарим Сергея и «Mafia Vero» за плодотворное сотрудничество не на одном мероприятии. Все сотрудники были очень довольны и заинтересованы игрой. Отдельно стоит отметить брендирование: все в стилистике игры, что является немаловажным! Надеемся на дальнейшее сотрудничество и множество совместных мероприятий!</p>
+                            <div class="foot_testimonials">
+                                <div class="name_testimonials">Дарья</div>
+                                <div class="company_testimonials">New Art</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="item_testimonials">
+                        <div class="image_testimonials">
+                            <img src="img/17.jpg" alt="Alt">
+                        </div>
+                        <div class="text_testimonials">
+                            <p>ДР с «Mafia Vero» - потрясающее времяпровождение в прекрасной компании! Мы провели незабываемые 3 часа, в которых было много смеха, юмора, «кровавых интриг и неизбежных разоблачений – прекрасное завершение вечера в честь моего Дня рождения! Интересно раскрываются грани личностей близких людей и это делает Дружбу и Любовь ещё крепче! Благодарю за классный вечер! Было решено играть обязательно!</p>
+                            <div class="foot_testimonials">
+                                <div class="name_testimonials">Елена</div>
+                                <div class="company_testimonials"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="item_testimonials">
+                        <div class="image_testimonials">
+                            <img src="img/18.jpg" alt="Alt">
+                        </div>
+                        <div class="text_testimonials">
+                            <p>Наша компания сотрудничает с «Mafia Vero» уже несколько лет. Все совместные мероприятия были организованы на достойном уровне, в установленные заранее сроки. Организованные корпоративные активности полностью оправдали наши ожидания. Приятно отметить, что Сергей всегда помогает подобрать наиболее оптимальные варианты досуга исходя из бюджета мероприятия. Рекомендуем для сотрудничества!</p>
+                            <div class="foot_testimonials">
+                                <div class="name_testimonials">Алексей</div>
+                                <div class="company_testimonials">SOFTTECO</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="item_testimonials">
+                        <div class="image_testimonials">
+                            <img src="img/19.jpg" alt="Alt">
+                        </div>
+                        <div class="text_testimonials">
+                            <p>Провели «мафию» среди наших клиентов. 40 человек, 4 стола – было весело!</p>
+                            <div class="foot_testimonials">
+                                <div class="name_testimonials">Дмитрий</div>
+                                <div class="company_testimonials">OMEGA TOWER</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="item_testimonials">
+                        <div class="image_testimonials">
+                            <img src="img/20.jpg" alt="Alt">
+                        </div>
+                        <div class="text_testimonials">
+                            <p>Благодаря «Mafia Vero» провели прекрасный тим-билдинг. Ивент получился ярким и насыщенным. Ребята смогли взглянуть друг на друга немного с другой стороны в неформальной обстановке. Прекрасный задел для построения дружной команды. Для меня огромным плюсом было то, что организация не потребовала больших вложений времени - Сергей полностью скоординировал мероприятие, от выбора кафе и до самых мелких организационных вопросов.</p>
+                            <div class="foot_testimonials">
+                                <div class="name_testimonials">Юрий</div>
+                                <div class="company_testimonials">EPAM</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="item_testimonials">
+                        <div class="image_testimonials">
+                            <img src="img/21.jpg" alt="Alt">
+                        </div>
+                        <div class="text_testimonials">
+                            <p>Команда клуба «Mafia Vero» уже несколько лет работает на наших тимбилдингах и корпоративных мероприятиях. Благодарим ведущих и организаторов игр за исполнительность, четкость, интересную подачу, интерактивное общение с гостями. Ваши игры помогают сотрудникам объединяться, налаживать коммуникацию, подключать аналитику. Будем рады видеть вас на наших командообразующих мероприятиях снова!</p>
+                            <div class="foot_testimonials">
+                                <div class="name_testimonials">Алина</div>
+                                <div class="company_testimonials">OXAGILE</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="item_testimonials">
+                        <div class="image_testimonials">
+                            <img src="img/22.jpg" alt="Alt">
+                        </div>
+                        <div class="text_testimonials">
+                            <p>Благодаря «Mafia Vero» провели отличные игры для клиентов! Наши клиенты – это руководители предприятий из разных городов, необходимо было сплотить незнакомых людей и сделать это стильно. Спасибо команде клуба за работу, обратимся снова.</p>
+                            <div class="foot_testimonials">
+                                <div class="name_testimonials">Нина</div>
+                                <div class="company_testimonials">АТЛАНТ-КОНСАЛТ</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="item_testimonials">
+                        <div class="image_testimonials">
+                            <img src="img/23.jpg" alt="Alt">
+                        </div>
+                        <div class="text_testimonials">
+                            <p>Мне здесь очень интересно и комфортно. Культура общения, несмотря на жаркие баталии за игровым столом.</p>
+                            <div class="foot_testimonials">
+                                <div class="name_testimonials">Дмитрий</div>
+                                <div class="company_testimonials"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="item_testimonials">
+                        <div class="image_testimonials">
+                            <img src="img/24.jpg" alt="Alt">
+                        </div>
+                        <div class="text_testimonials">
+                            <p>Здесь, во-первых, чудесные и удивительные люди, всегда позитивная атмосфера, очень хорошая организованность.</p>
+                            <div class="foot_testimonials">
+                                <div class="name_testimonials">Алексей</div>
+                                <div class="company_testimonials"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="item_testimonials">
+                        <div class="image_testimonials">
+                            <img src="img/25.jpg" alt="Alt">
+                        </div>
+                        <div class="text_testimonials">
+                            <p>Игра проходила живо, активно и смешно! Я потом много благодарностей получала спустя время.</p>
+                            <div class="foot_testimonials">
+                                <div class="name_testimonials">Екатерина</div>
+                                <div class="company_testimonials">TDI</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="item_testimonials">
+                        <div class="image_testimonials">
+                            <img src="img/26.jpg" alt="Alt">
+                        </div>
+                        <div class="text_testimonials">
+                            <p>Для новичка условия идеальные: дружелюбные организаторы и игроки, атмосфера взаимопомощи и азарта, отличные рестораны.</p>
+                            <div class="foot_testimonials">
+                                <div class="name_testimonials">Евгений</div>
+                                <div class="company_testimonials"></div>
                             </div>
                         </div>
                     </div>
@@ -543,7 +1136,7 @@
                 <form action="">
                     <div class="wrap_form">
                         <input type="text" placeholder="Как вас зовут?">
-                        <input type="tel" placeholder="+7 ___-___-__-__">
+                        <input type="tel" placeholder="+ ___-___-__-__">
                     </div>
                     <select name="" id="">
                         <option value="Желаемый формат игры">Желаемый формат игры</option>
@@ -612,6 +1205,7 @@
     
 	
     <script src="js/libs.min.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="js/jquery-ui.js"></script>
     <script src="js/jquery-ui-touch.js"></script>
     <script src="js/main.js"></script>
@@ -619,6 +1213,7 @@
         $("#polzunok").slider({
             animate: "slow",
             range: "min",
+            min: 2,
             max: 7,    
             value: 2,
             step: 1,
