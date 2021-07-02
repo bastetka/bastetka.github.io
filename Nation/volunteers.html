@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Блог</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<header class="head">
+		<div class="wrapper">
+			<a href="#" class="toggle_menu"><span></span></a>
+			<div class="wrap_logo">
+				<a href="/" class="logo">
+					<img src="img/logo.svg" alt="Возрождение нации">
+					<div class="name_logo">
+						<div class="title_logo">Возрождение <span>нации</span></div>
+						<div class="descr_logo">Благотворительный фонд</div>
+					</div>
+				</a>
+				<button class="btn_volume"></button>
+			</div>
+			<div class="nav_head">
+				<div class="wrap_logo">
+					<a href="/" class="logo">
+						<img src="img/logo.svg" alt="Возрождение нации">
+						<div class="name_logo">
+							<div class="title_logo">Возрождение <span>нации</span></div>
+							<div class="descr_logo">Благотворительный фонд</div>
+						</div>
+					</a>
+					<button class="btn_volume"></button>
+				</div>
+				<nav class="menu">
+					<ul>
+						<li><a href="reporting.html">Отчетность</a></li>		
+						<li><a href="programs.html">Программы</a></li>		
+						<li><a href="wards.html">Подопечные</a></li>		
+						<li class="active"><a href="volunteers.html">Волонтерам</a></li>		
+						<li><a href="video.html">Видео</a></li>		
+						<li><a href="about.html">О фонде</a></li>		
+						<li><a href="blog.html">Блог</a></li>		
+					</ul>
+				</nav>
+				<div class="phone">
+					<a href="tel:+79001214303">+7(900)121-43-03</a>
+				</div>
+				<a href="#" class="close_menu"></a>
+			</div>
+			<div class="btn_head">
+				<div class="phone">
+					<span>Телефон:</span>
+					<a href="tel:+79001214303">+7(900)121-43-03</a>
+				</div>
+				<a href="#popup_donation" class="btn btn_donation"><span>Пожертвовать</span></a>
+			</div>
+		</div>
+	</header>
+	<div class="container">
+		<div class="content">
+			<div class="wrap_volunteer">
+                <div class="title_volunteer">
+                    <img src="img/icon_volunteer.svg" alt="Alt">
+                    <h1>Станьте волонтером</h1>
+                    <div class="descr">Мы приглашаем вас принять участие в деятельности фонда. Нам нужны педагоги, аниматоры, врачи, фотографы, психологи, логопеды, дизайнеры, швеи и просто творческие, добрые, активные люди.</div>
+                    <p>Заполните анкету в несколько шагов, чтобы заявить о себе.</p>
+                </div>
+                <div class="form_volunteer">
+                    <form id="form_volunteer" class="form" action="" method="post">
+                        <div class="steps_form">
+                            <div class="step active">Ваши данные <span class="active">1</span></div>
+                            <div class="step">Кому хотите помочь? <span>2</span></div>
+                            <div class="step">Какая помощь? <span>3</span></div>
+                            <div class="step">Как часто? <span>4</span></div>
+                        </div>
+                        <div class="tab tab_1">
+                            <div class="scale_form"><span></span></div>
+                            <div class="title_form">Личные данные</div>
+                            <div class="wrap_form">
+                                <div class="item_form">
+                                    <label class="req">
+                                        <input type="text" class="field" required>
+                                        <span class="text_field">Имя</span>
+                                        <span class="reset_field"></span>
+                                    </label>
+                                </div>
+                                <div class="item_form">
+                                    <label class="req">
+                                        <input type="text" class="field" required>
+                                        <span class="text_field">Фамилия</span>
+                                        <span class="reset_field"></span>
+                                    </label>
+                                </div>
+                                <div class="item_form">
+                                    <label class="req">
+                                        <input type="text" class="field" required>
+                                        <span class="text_field">Отчество</span>
+                                        <span class="reset_field"></span>
+                                    </label>
+                                </div>
+                                <div class="item_form">
+                                    <label class="req">
+                                        <input type="text" class="field" required>
+                                        <span class="text_field">Дата рождения</span>
+                                        <span class="reset_field"></span>
+                                    </label>
+                                </div>
+                                <div class="item_form item_form_lg">
+                                    <label>
+                                        <input type="text" class="field" required>
+                                        <span class="text_field">Есть ли у вас есть припятствующие ограничения по здоровью, укажите какие</span>
+                                        <span class="reset_field"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="title_form">Социальное устройство</div>
+                            <div class="wrap_form">
+                                <div class="item_form item_form_lg">
+                                    <label class="req city_field">
+                                        <input type="text" class="field" required>
+                                        <p>Проживаете: <span>Область, город (поселение), улица, дом, квартира</span></p>
+                                        <span class="reset_field"></span>
+                                    </label>
+                                </div>
+                                <div class="item_form">
+                                    <label class="req">
+                                        <input type="text" class="field" required>
+                                        <span class="text_field">Ваша профессия</span>
+                                        <span class="reset_field"></span>
+                                    </label>
+                                </div>
+                                <div class="item_form">
+                                    <label class="req">
+                                        <input type="text" class="field" required>
+                                        <span class="text_field">В каком районе удобнее помогать</span>
+                                        <span class="reset_field"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="title_form">Ваши контакты</div>
+                            <div class="wrap_form">
+                                <div class="item_form">
+                                    <label class="req">
+                                        <input type="text" class="field" required>
+                                        <span class="text_field">Номер телефона</span>
+                                        <span class="reset_field"></span>
+                                    </label>
+                                </div>
+                                <div class="item_form">
+                                    <label>
+                                        <input type="text" class="field" required>
+                                        <span class="text_field">E-mail</span>
+                                        <span class="reset_field"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab tab_2">
+                            <div class="scale_form"><span></span></div>
+                            <h2>Вы можете выбрать несколько</h2>
+                            <div class="wrap_form">
+                                <div class="item_form">
+                                    <div class="title_form">В своем районе</div>
+                                    <label class="checkbox">
+                                        <input type="checkbox" name="check" required="">
+                                        <p>Старикам и инвалидам дома <span>Уход, помощь по дому, общение, и т.п.</span></p>
+                                    </label>
+                                    <label class="checkbox">
+                                        <input type="checkbox" name="check" required="">
+                                        <p>Мамам с детьми и по дому <span>В многодетных и неполных семьях</span></p>
+                                    </label>
+                                    <label class="checkbox">
+                                        <input type="checkbox" name="check" required="">
+                                        <p>Малоимущим семьям</p>
+                                    </label>
+                                </div>
+                                <div class="item_form">
+                                    <div class="title_form">Взрослым в госучреждениях</div>
+                                    <label class="checkbox">
+                                        <input type="checkbox" name="check1" required="">
+                                        <p>В больницах <span>Уход, общение, прогулки</span></p>
+                                    </label>
+                                    <label class="checkbox">
+                                        <input type="checkbox" name="check1" required="">
+                                        <p>В хосписах</p>
+                                    </label>
+                                    <label class="checkbox">
+                                        <input type="checkbox" name="check1" required="">
+                                        <p>Проживающим в интернатах</p>
+                                    </label>
+                                </div>
+                                <div class="item_form">
+                                    <div class="title_form">Детям в госучреждениях</div>
+                                    <label class="checkbox">
+                                        <input type="checkbox" name="check1" required="">
+                                        <p>Детям инвалидам <span>В детских домах</span></p>
+                                    </label>
+                                    <label class="checkbox">
+                                        <input type="checkbox" name="check1" required="">
+                                        <p>Детям в больницах</p>
+                                    </label>
+                                </div>
+                                <div class="item_form">
+                                    <div class="title_form">Бездомным</div>
+                                    <label class="checkbox">
+                                        <input type="checkbox" name="check1" required="">
+                                        <p>В больницах и центрах</p>
+                                    </label>
+                                    <label class="checkbox">
+                                        <input type="checkbox" name="check1" required="">
+                                        <p>На улицах</p>
+                                    </label>
+                                </div>
+                                <div class="item_form">
+                                    <div class="title_form">Оперативная помощь</div>
+                                    <label class="checkbox checkbox_big">
+                                        <input type="checkbox" name="check1" required="">
+                                        <p>Группе «быстрого реагирования» <span>Просьбы из разных направлений, требующие действий ближайшие 3-24 часа</span></p>
+                                    </label>
+                                    <label class="checkbox">
+                                        <input type="checkbox" name="check1" required="">
+                                        <p>Помощь на своей машине <span>Привезти в храм, в больницу и т.п.</span></p>
+                                    </label>
+                                </div>
+                                <div class="item_form">
+                                    <div class="title_form">Участие в программах</div>
+                                    <label class="checkbox">
+                                        <input type="checkbox" name="check1" required="">
+                                        <p>Участвовать в творческих занятиях с детьми из многодетных и малоимущих семей в клубе «Мама тоже человек»</p>
+                                    </label>
+                                </div>
+                                <div class="item_form item_form_lg">
+                                    <label class="checkbox">
+                                        <input type="checkbox" class="inactive" name="check1">
+                                        <p>Иное</p>
+                                    </label>
+                                    <label class="wrap_field">
+                                        <input type="text" class="field deactive_field" required disabled>
+                                        <span class="text_field">Опишите своими словами</span>
+                                        <span class="reset_field"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab tab_3">
+                            <div class="scale_form"><span></span></div>
+                            <h2>Вы можете выбрать несколько</h2>
+                            <label class="checkbox">
+                                <input type="checkbox" name="check" required="">
+                                <p>Убраться, помыть полы, окна</p>
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox" name="check" required="">
+                                <p>Приготовить еду</span></p>
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox" name="check" required="">
+                                <p>Купить продукты, вещи, лекарства</p>
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox" name="check" required="">
+                                <p>Погулять с ребенком, помочь сделать уроки</p>
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox" name="check" required="">
+                                <p>Готов помогать с уходом, если научат и покажут</p>
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox" name="check" required="">
+                                <p>Сопроводить бездомного до места жительства <span>На поезде или иным транспортом</span></p>
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox" name="check" required="">
+                                <p>Побеседовать по телефону</p>
+                            </label>
+                            <div class="item_form item_form_lg">
+                                <label class="checkbox">
+                                    <input type="checkbox" class="inactive" name="check1">
+                                    <p>Дать профессиональную консультацию</p>
+                                </label>
+                                <label class="wrap_field">
+                                    <input type="text" class="field deactive_field" required disabled>
+                                    <span class="text_field">Укажите какую консультацию вы можете провести</span>
+                                    <span class="reset_field"></span>
+                                </label>
+                            </div>
+                            <label class="checkbox">
+                                <input type="checkbox" name="check" required="">
+                                <p>Административная помощь <span>Отправка корреспонденции; распространение листовок/объявлений (в том числе по храмам)</span></p>
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox" name="check" required="">
+                                <p>Помощь в качестве курьера</p>
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox" name="check" required="">
+                                <p>Организовывать кружки; творческая, музыкальная деятельность</p>
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox" name="check" required="">
+                                <p>Духовно-просветительская деятельность <span>Воскресная школа, огласительные беседы, приходской</span></p>
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox" name="check" required="">
+                                <p>Участвовать в благотворительных акциях, праздничных мероприятиях <span>Организуемых при храме Казанской иконы Божией Матери г. Ростова-на-Дону</span></p>
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox" name="check" required="">
+                                <p>Консультант в храме</p>
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox" name="check" required="">
+                                <p>Перевезти лекарства, вещи <span>Без автомобиля</span></p>
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox" name="check" required="">
+                                <p>Сделать мелкий ремонт</p>
+                            </label>
+                            <div class="select">
+                                <label class="select_form">
+                                    <span class="text_field">Вы можете указать несколько вариантов из списка</span>
+                                </label>
+                                <div class="wrap_select">
+                                    <label class="item_select">
+                                        <input type="checkbox" name="repairs" value="Сантехника">
+                                        <span>Сантехника</span>
+                                    </label>
+                                    <label class="item_select">
+                                        <input type="checkbox" name="repairs" value="Электрика">
+                                        <span>Электрика</span>
+                                    </label>
+                                    <label class="item_select">
+                                        <input type="checkbox" name="repairs" value="Малярные работы">
+                                        <span>Малярные работы</span>
+                                    </label>
+                                    <label class="item_select">
+                                        <input type="checkbox" name="repairs" value="Плотничество">
+                                        <span>Плотничество</span>
+                                    </label>
+                                    <label class="item_select">
+                                        <input type="checkbox" name="repairs" value="Мебель">
+                                        <span>Мебель</span>
+                                    </label>
+                                    <label class="item_select">
+                                        <input type="checkbox" name="repairs" value="Двери, замки">
+                                        <span>Двери, замки</span>
+                                    </label>
+                                    <label class="item_select">
+                                        <input type="checkbox" name="repairs" value="Косметический">
+                                        <span>Косметический</span>
+                                    </label>
+                                </div>
+                                <div id="result_select">
+                                    <div class="more_select"></div>
+                                </div>
+                            </div>
+                            <label class="checkbox">
+                                <input type="checkbox" name="check" required="">
+                                <p>Обзвон добровольцев, помощь координатору</p>
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox" name="check" required="">
+                                <p>Стать координатором в мероприятиях</p>
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox" name="check" required="">
+                                <p>Дежурить у детей-сирот в больнице</p>
+                            </label>
+                            <div class="item_form item_form_lg">
+                                <label class="checkbox">
+                                    <input type="checkbox" class="inactive" name="check1">
+                                    <p>Добровольное донорство крови в случае срочной ситуации</p>
+                                </label>
+                                <div class="fields">
+                                    <label class="wrap_field">
+                                        <input type="text" class="field deactive_field" required disabled>
+                                        <span class="text_field">Группа крови</span>
+                                        <span class="reset_field"></span>
+                                    </label>
+                                    <label class="wrap_field">
+                                        <input type="text" class="field deactive_field" required disabled>
+                                        <span class="text_field">Резус фактор</span>
+                                        <span class="reset_field"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="item_form item_form_lg">
+                                <label class="checkbox">
+                                    <input type="checkbox" class="inactive" name="check1">
+                                    <p>Другая помощь</p>
+                                </label>
+                                <label class="wrap_field">
+                                    <input type="text" class="field deactive_field" required disabled>
+                                    <span class="text_field">Опишите своими словами</span>
+                                    <span class="reset_field"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="tab tab_4">
+                            <div class="scale_form"><span></span></div>
+                            <h2>На сколько регулярно вы можете оказывать помощь?</h2>
+                            <div class="regularly">
+                                <div class="wrap_fields">
+                                    <div class="item_form">
+                                        <label>
+                                            <input type="text" class="field" required>
+                                            <span class="text_field">Сколько раз в месяц?</span>
+                                            <span class="reset_field"></span>
+                                        </label>
+                                    </div>
+                                    <div class="item_form">
+                                        <label>
+                                            <input type="text" class="field" required>
+                                            <span class="text_field">Удобное время</span>
+                                            <span class="reset_field"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="wrap_checkbox">
+                                    <div class="item_checkbox">
+                                        <label class="checkbox">
+                                            <input type="checkbox" name="check">
+                                            <p>В любой день</p>
+                                        </label>
+                                        <label class="checkbox">
+                                            <input type="checkbox" name="check">
+                                            <p>Понедельник</p>
+                                        </label>
+                                        <label class="checkbox">
+                                            <input type="checkbox" name="check">
+                                            <p>Вторник</p>
+                                        </label>
+                                        <label class="checkbox">
+                                            <input type="checkbox" name="check">
+                                            <p>Среда</p>
+                                        </label>
+                                    </div>
+                                    <div class="item_checkbox">
+                                        <label class="checkbox">
+                                            <input type="checkbox" name="check">
+                                            <p>Четверг</p>
+                                        </label>
+                                        <label class="checkbox">
+                                            <input type="checkbox" name="check">
+                                            <p>Пятница</p>
+                                        </label>
+                                        <label class="checkbox">
+                                            <input type="checkbox" name="check">
+                                            <p>Суббота</p>
+                                        </label>
+                                        <label class="checkbox">
+                                            <input type="checkbox" name="check">
+                                            <p>Воскресенье</p>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form_buttons">
+                          <a href="#" class="back link link_prev">Назад</a>
+                          <a href="#" class="next btn btn_blue">Продолжить</a>
+                          <button id="submit" class="btn btn_blue" type="submit">Отправить заявку</button>
+                      </div>
+                  </form>
+                </div>
+            </div>
+            <div class="success_volunteer">
+                <img src="img/charity.svg" alt="Alt">
+                <h2>Заявка отправлена</h2>
+                <div class="descr">Ваша заявка на волонтерство была успешно отправлена. Мы свяжемся с вами по указанным контактам.</div>
+                <span>Спасибо вам</span>
+                <a href="index.html" class="btn btn_blue">на главную страницу</a>
+            </div>
+		</div>
+	</div>
+	<footer>
+		<div class="wrap_foot">
+			<div class="wrapper">
+				<div class="logo_foot">
+					<a href="/" class="logo">
+						<img src="img/logo.svg" alt="Возрождение нации">
+						<div class="name_logo">
+							<div class="title_logo">Возрождение <span>нации</span></div>
+							<div class="descr_logo">Благотворительный фонд</div>
+						</div>
+					</a>
+					<div class="descr">Начните помогать людям уже сегодня, пожертвовав любую удобную для вас сумму.</div>
+					<a href="#popup_donation" class="btn">Пожертвовать</a>
+				</div>
+				<div class="info_foot">
+					<div class="menu menu_foot">
+						<ul>
+							<li><a href="reporting.html">Отчетность</a></li>		
+							<li><a href="programs.html">Программы</a></li>		
+							<li><a href="wards.html">Подопечные</a></li>		
+							<li><a href="">Волонтерам</a></li>		
+							<li><a href="video.html">Видео</a></li>		
+							<li><a href="about.html">О фонде</a></li>		
+							<li><a href="blog.html">Блог</a></li>			
+						</ul>
+					</div>
+					<div class="requisites">
+						<h3>Реквизиты</h3>
+						<div class="wrap_requisites">
+							<div class="item_requisites">
+								<p>Свидетельство Министерства юстиции РФ о государственной регистрации некоммерческой организации от 16.06.2009 г.</p>
+								<span>ОГРН 1096100001843</span>
+								<span>ИНН/КПП 6166070187/616401001</span>
+							</div>
+							<div class="item_requisites">
+								<span>р/с 40703810852090001143</span>
+								<span>Юго-Западный банк ПАО Сбербанк</span>
+								<span>г. Ростов-на-Дону,</span>
+								<span>к/с 30101810600000000602,</span>
+								<span>БИК 046015602</span>
+							</div>
+							<div class="contacts_foot">
+								<p>
+									<span>344002, Ростовская область,</span>
+									<span>г. Ростов-на-Дону,</span>
+									<span>ул. Серафимовича, д. 58 А, эт. 3, оф. 1</span>
+								</p>
+								<div class="wrap_link">
+									<a href="tel:+79001214303" class="link_phone">+7(900)121-43-03</a>
+									<a href="mailto:vnfond@mail.ru" class="link_mail">vnfond@mail.ru</a>
+								</div>
+							</div>
+						</div>	
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="copyright">
+			<div class="wrapper">
+				<div class="wrap_copy">
+					<p>Благотворительный фонд «Возрождение Нации» 2020</p>
+					<div class="link_foot">
+						<a href="#">Политика конфиденциальности</a>
+						<a href="#">Условия возврата</a>
+					</div>
+				</div>
+			</div>
+		</div>
+    </footer>
+
+	<div class="hidden">
+		<div id="popup_donation" class="popup popup_donation">
+			<div class="title_popup">Пожертвовать</div>
+			<div class="descr">Вы можете стать частью нашей команды, помогая спасать судьбы людей.</div>
+			<form action="" class="form form_donat">
+				<div class="switch">
+					<div class="wrap_switch">
+						<input id="ontime"  name="switch" type="radio"> 
+						<input id="monthly" name="switch" type="radio">
+						<label for="ontime" class="text_switch text_ontime active">Единоразово</label>
+							<div class="btn_switch"></div>
+						<label for="monthly" class="text_switch text_monthly">Ежемесячно</label>
+					</div>
+				</div>
+				<div class="wrap_form">
+                    <div class="item_form">
+                        <label class="req">
+                            <input type="text" class="field" required>
+                            <span class="text_field">Сумма в рублях</span>
+                            <span class="reset_field"></span>
+                        </label>
+                        <label class="req">
+                            <input type="text" class="field" required>
+                            <span class="text_field">Имя</span>
+                            <span class="reset_field"></span>
+                        </label>
+                    </div>
+                    <div class="item_form">
+						<div class="select">
+							<label class="select_form">
+								<span class="text_field">Способ оплаты</span>
+								<div class="text_select">Банковская карта</div>
+							</label>
+							<div class="wrap_select">
+								<label class="item_select active">
+									<input type="radio" name="pay" checked>
+									<span>Банковская карта</span>
+								</label>
+								<label class="item_select">
+									<input type="radio" name="pay">
+									<span>Платежная квитанция</span>
+								</label>
+								<label class="item_select">
+									<input type="radio" name="pay">
+									<span>PayPal</span>
+								</label>
+							</div>
+						</div>
+                        <label class="req">
+                            <input type="text" class="field" required>
+                            <span class="text_field">Фамилия</span>
+                            <span class="reset_field"></span>
+                        </label>
+                    </div>
+                </div>
+				<div class="wrap_checkbox">
+					<div class="checkbox">
+						<input type="checkbox" id="check_1" checked="">
+						<label for="check_1"><span></span>Я принимаю <a href="#">Договор оферты</a></label>
+					</div>
+					<div class="checkbox">
+						<input type="checkbox" id="check_2" checked="">
+						<label for="check_2"><span></span>Я согласен на обработку моих персональных данных</label>
+					</div>
+				</div>
+				<button class="btn btn_submit" type="submit">Пожертвовать</button>
+			</form>
+        </div>
+        <div id="popup_success" class="popup popup_success">
+            <img src="img/success.svg" alt="Alt">
+            <div class="title_popup">Спасибо<br> за вашу помощь</div>
+            <div class="descr">Ваше пожертвование было успешно отправлено</div>
+        </div>
+        <div id="popup_guide" class="popup popup_guide">
+            <div class="title_popup">Инструкция к пожертвованию</div>
+			<div class="descr">Выберите вкладку удобного способа</div>
+			<div class="tabs_guide">
+                <div class="tab_guide active">Приложение </div>
+                <div class="tab_guide">Веб-портал</div>
+            </div>
+        </div>
+	</div>
+	
+	<script src="js/libs.min.js"></script>
+	<script src="js/main.js"></script>
+	
+</body>
+</html>
