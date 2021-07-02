@@ -197,7 +197,8 @@
             <h2>Присоединяйтесь к клану мафиози</h2>
             <div class="subtitle">Интересно, кем вы будете в игре?</div>
         </div>
-        <div class="wrap_clan scroll_bar defaultscroll">
+        <div class="wrap_clan">
+            <div class="scroller">
             <div class="item_clan">
                 <a href="#video_clan-0" class="video_clan">
                     <img src="img/clan-1.png" alt="Alt">
@@ -312,6 +313,9 @@
                     </div>
                 </a>
             </div>
+            </div>
+            <span class="arr prev"><img src="img/arr-prev.png" alt="Alt"></span>
+            <span class="arr next"><img src="img/arr-next.png" alt="Alt"></span>
         </div>
         <a href="#" class="btn">Да, я хочу так же!</a>
     </section>
@@ -1308,6 +1312,37 @@
         $('#phone_mask').change();
     </script>
     <script>
+        const testimonials = document.querySelector('.wrap_clan');
+const scroller = testimonials.querySelector('.scroller');
+const nextBtn = testimonials.querySelector('.arr.next');
+const prevBtn = testimonials.querySelector('.arr.prev');
+const itemWidth = testimonials.querySelector('.item_clan').clientWidth;
+
+nextBtn.addEventListener('click', scrollToNextItem);
+prevBtn.addEventListener('click', scrollToPrevItem);
+
+function scrollToNextItem() {
+    if (scroller.scrollLeft < (scroller.scrollWidth - itemWidth)) {
+        // Позиция прокрутки не в начале последнего элемента 
+        scroller.scrollBy({ left: itemWidth, top: 0, behavior: 'smooth' });
+    } else {
+        // Достигнут последний элемент 
+        // Вернёмся к первому элементу, установив положение прокрутки на 0 
+        scroller.scrollTo({ left: 0, top: 0, behavior: 'smooth' });
+    }
+}
+
+function scrollToPrevItem() {
+    if (scroller.scrollLeft != 0) {
+        // Позиция прокрутки не в начале первого элемента 
+        scroller.scrollBy({ left: -itemWidth, top: 0, behavior: 'smooth' });
+    } else {
+        // Это первый элемент (отзыв) 
+        // Перейдём к последнему элементу, установив положение прокрутки на ширину «.scroller» 
+        scroller.scrollTo({ left: scroller.scrollWidth, top: 0, behavior: 'smooth' });
+    }
+}
+
         $("#polzunok").slider({
             animate: "slow",
             range: "min",
