@@ -1173,9 +1173,9 @@
                         <input type="checkbox" id="phone_mask" checked>
                     </div>
                     <select name="" id="">
-                        <option value="Желаемый формат игры">Желаемый формат игры</option>
-                        <option value="Желаемый формат игры">Желаемый формат игры</option>
-                        <option value="Желаемый формат игры">Желаемый формат игры</option>
+                        <option value="">Желаемый формат игры</option>
+                        <option value="Желаемый формат игры">Вы приезжаете к нам</option>
+                        <option value="Желаемый формат игры">Мы приезжаем к вам</option>
                     </select>
                     <input type="text" placeholder="Ваш город">
                     <input type="text" placeholder="Количество участников (от 7 до 1000)">
@@ -1318,7 +1318,7 @@ const nextBtn = testimonials.querySelector('.arr.next');
 const prevBtn = testimonials.querySelector('.arr.prev');
 const itemWidth = testimonials.querySelector('.item_clan').clientWidth;
 
-nextBtn.addEventListener('click', scrollToNextItem);
+testimonials.addEventListener('onWheel', scrollToNextItem);
 prevBtn.addEventListener('click', scrollToPrevItem);
 
 function scrollToNextItem() {
