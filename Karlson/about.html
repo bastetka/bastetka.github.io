@@ -134,7 +134,7 @@
                 </div>
             </div>
             <div class="descr">Rezervēšana un vizītes pieteikšana Karlson bērnudārzā</div>
-            <a href="#" class="btn">Записаться</a>
+            <a href="#order" class="btn">Записаться</a>
         </div>
     </div>
     <footer>
@@ -190,7 +190,58 @@
     </footer>
 
     <div class="hidden">
-
+        <div id="order" class="popup">
+            <div class="wrap_popup">
+                <form class="form_popup" action="">
+                    <label>
+                        <span class="req">1. Kādu filiāli Jūs vēlaties apmeklēt?</span>
+                        <input type="text" placeholder="Jugla / Rīgā, Brīvības ielā 393">
+                    </label>
+                    <label>
+                        <span>2. Bērna vārds</span>
+                        <input type="text" placeholder="Olga">
+                    </label>
+                    <label>
+                        <span class="req">3. Bērna dzimšanas datums</span>
+                        <input type="text" placeholder="mm/dd/yyyy">
+                    </label>
+                    <label>
+                        <span>4. Kāds būtu Jums ērtākais vizītes datums?</span>
+                        <input type="text" placeholder="mm/dd/yyyy">
+                    </label>
+                    <label>
+                        <span>5. Kāds būtu Jums ērtākais vizītes laiks?</span>
+                        <input type="text" placeholder="--:-- --">
+                    </label>
+                    <label>
+                        <span>6. Kad vēlaties uzsākt bērnudarza gaitas?</span>
+                        <input type="text" placeholder="mm/dd/yyyy">
+                    </label>
+                    <label>
+                        <span class="req">7. Jūsu email</span>
+                        <input type="text" placeholder="">
+                    </label>
+                    <label>
+                        <span class="req">8. Jūsu tālrnis</span>
+                        <input type="text" placeholder="">
+                    </label>
+                    <div class="wrap_checkbox">
+                        <div class="checkbox">
+                            <input type="checkbox" id="check_1" checked="">
+                            <label for="check_1"><span></span>I accept Privacy Politics and Terms of use</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="check_2" checked="">
+                            <label for="check_2"><span></span>Прислать напоминание на email</label>
+                        </div>
+                    </div>
+                    <input type="submit" value="Записаться">
+                </form>
+                <div class="image_popup">
+                    <img src="img/form.gif" alt="Alt">
+                </div>
+            </div>
+        </div>
 	</div>
 	
     <script src="js/libs.min.js"></script>
