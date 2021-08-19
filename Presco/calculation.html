@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Presco Freight</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon.ico">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon.ico">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon.ico">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header class="head">
+        <div class="wrapper">
+            <div class="logo_head">
+                <a href="index.html" class="logo"><img src="img/logo.png" alt="Karlson"></a>
+                <div class="slogan">World is yours</div>
+            </div>
+            <div class="menu_head">
+                <nav>
+                    <ul class="menu">
+                        <li><a href="services.html">Услуги</a></li>
+                        <li><a href="">Информация</a></li>
+                        <li><a href="">О нас</a></li>
+                        <li><a href="">Галерея</a></li>
+                        <li><a href="">Вакансии</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="language">
+                    <a href="#" class="lv"><img src="img/lv.png" alt="Alt"></a>
+                    <a href="#" class="ru"></a>
+                </div>
+            </div>
+            <div class="user_menu">
+                <a href="registration.html" class="registration">Регистрация</a>
+                <a href="#" class="login">Вход</a>
+            </div>
+            <a href="#" class="toggle_menu"><span></span></a>
+        </div>
+    </header>
+    <div class="content">
+        <div class="wrapper">
+            <h1>Калькулятор расчета стоимости документа</h1>
+            <p>Инструмент позволяет быстро оформить и отправить документ в любую страну. Сразу узнайте цену и оплатите, используя платежную карту.</p>
+            <form id="form_calculation" class="form form_calculation" action="" method="post">
+                <div class="steps_form">
+                    <div class="step active"><span class="active">1</span> Данные об отправлении</div>
+                    <div class="step"><span>2</span> Данные отправителя</div>
+                    <div class="step"><span>3</span> Данные получателя</div>
+                    <div class="step"><span>4</span> Подтверждение заказа</div>
+                    <div class="step"><span>5</span> Оплатить</div>
+                </div>
+                <div class="wpar_calculation">
+                    <div class="tab tab_1">
+                        <div class="scale_form"><span></span></div>
+                        <div class="title_form">Данные об отправлении</div>
+                        <div class="wrap_form">
+                            <label>
+                                <input type="text" class="field" required>
+                                <span class="text_field">Имя Фамилия или Название предприятия*</span>
+                            </label>
+                            <label>
+                                <input type="text" class="field" required>
+                                <span class="text_field">Регистрационный номер</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="tab tab_2">
+                        <div class="scale_form"><span></span></div>
+                        <h2>Вы можете выбрать несколько</h2>
+                        <div class="wrap_form">
+                            <div class="item_form">
+                                <div class="title_form">В своем районе</div>
+                                <label class="checkbox">
+                                    <input type="checkbox" name="check" required="">
+                                    <p>Старикам и инвалидам дома <span>Уход, помощь по дому, общение, и т.п.</span></p>
+                                </label>
+                                <label class="checkbox">
+                                    <input type="checkbox" name="check" required="">
+                                    <p>Мамам с детьми и по дому <span>В многодетных и неполных семьях</span></p>
+                                </label>
+                                <label class="checkbox">
+                                    <input type="checkbox" name="check" required="">
+                                    <p>Малоимущим семьям</p>
+                                </label>
+                            </div>
+                            <div class="item_form">
+                                <div class="title_form">Взрослым в госучреждениях</div>
+                                <label class="checkbox">
+                                    <input type="checkbox" name="check1" required="">
+                                    <p>В больницах <span>Уход, общение, прогулки</span></p>
+                                </label>
+                                <label class="checkbox">
+                                    <input type="checkbox" name="check1" required="">
+                                    <p>В хосписах</p>
+                                </label>
+                                <label class="checkbox">
+                                    <input type="checkbox" name="check1" required="">
+                                    <p>Проживающим в интернатах</p>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab tab_3">
+                        <div class="scale_form"><span></span></div>
+                        <h2>Вы можете выбрать несколько</h2>
+                        <label class="checkbox">
+                            <input type="checkbox" name="check" required="">
+                            <p>Убраться, помыть полы, окна</p>
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox" name="check" required="">
+                            <p>Приготовить еду</span></p>
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox" name="check" required="">
+                            <p>Купить продукты, вещи, лекарства</p>
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox" name="check" required="">
+                            <p>Погулять с ребенком, помочь сделать уроки</p>
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox" name="check" required="">
+                            <p>Готов помогать с уходом, если научат и покажут</p>
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox" name="check" required="">
+                            <p>Сопроводить бездомного до места жительства <span>На поезде или иным транспортом</span></p>
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox" name="check" required="">
+                            <p>Побеседовать по телефону</p>
+                        </label>
+                        <div class="item_form item_form_lg">
+                            <label class="checkbox">
+                                <input type="checkbox" class="inactive" name="check1">
+                                <p>Дать профессиональную консультацию</p>
+                            </label>
+                            <label class="wrap_field">
+                                <input type="text" class="field deactive_field" required disabled>
+                                <span class="text_field">Укажите какую консультацию вы можете провести</span>
+                                <span class="reset_field"></span>
+                            </label>
+                        </div>
+                        <label class="checkbox">
+                            <input type="checkbox" name="check" required="">
+                            <p>Административная помощь <span>Отправка корреспонденции; распространение листовок/объявлений (в том числе по храмам)</span></p>
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox" name="check" required="">
+                            <p>Помощь в качестве курьера</p>
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox" name="check" required="">
+                            <p>Организовывать кружки; творческая, музыкальная деятельность</p>
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox" name="check" required="">
+                            <p>Духовно-просветительская деятельность <span>Воскресная школа, огласительные беседы, приходской</span></p>
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox" name="check" required="">
+                            <p>Участвовать в благотворительных акциях, праздничных мероприятиях <span>Организуемых при храме Казанской иконы Божией Матери г. Ростова-на-Дону</span></p>
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox" name="check" required="">
+                            <p>Консультант в храме</p>
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox" name="check" required="">
+                            <p>Перевезти лекарства, вещи <span>Без автомобиля</span></p>
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox" name="check" required="">
+                            <p>Сделать мелкий ремонт</p>
+                        </label>
+                        <div class="select">
+                            <label class="select_form">
+                                <span class="text_field">Вы можете указать несколько вариантов из списка</span>
+                            </label>
+                            <div class="wrap_select">
+                                <label class="item_select">
+                                    <input type="checkbox" name="repairs" value="Сантехника">
+                                    <span>Сантехника</span>
+                                </label>
+                                <label class="item_select">
+                                    <input type="checkbox" name="repairs" value="Электрика">
+                                    <span>Электрика</span>
+                                </label>
+                                <label class="item_select">
+                                    <input type="checkbox" name="repairs" value="Малярные работы">
+                                    <span>Малярные работы</span>
+                                </label>
+                                <label class="item_select">
+                                    <input type="checkbox" name="repairs" value="Плотничество">
+                                    <span>Плотничество</span>
+                                </label>
+                                <label class="item_select">
+                                    <input type="checkbox" name="repairs" value="Мебель">
+                                    <span>Мебель</span>
+                                </label>
+                                <label class="item_select">
+                                    <input type="checkbox" name="repairs" value="Двери, замки">
+                                    <span>Двери, замки</span>
+                                </label>
+                                <label class="item_select">
+                                    <input type="checkbox" name="repairs" value="Косметический">
+                                    <span>Косметический</span>
+                                </label>
+                            </div>
+                            <div id="result_select">
+                                <div class="more_select"></div>
+                            </div>
+                        </div>
+                        <label class="checkbox">
+                            <input type="checkbox" name="check" required="">
+                            <p>Обзвон добровольцев, помощь координатору</p>
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox" name="check" required="">
+                            <p>Стать координатором в мероприятиях</p>
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox" name="check" required="">
+                            <p>Дежурить у детей-сирот в больнице</p>
+                        </label>
+                        <div class="item_form item_form_lg">
+                            <label class="checkbox">
+                                <input type="checkbox" class="inactive" name="check1">
+                                <p>Добровольное донорство крови в случае срочной ситуации</p>
+                            </label>
+                            <div class="fields">
+                                <label class="wrap_field">
+                                    <input type="text" class="field deactive_field" required disabled>
+                                    <span class="text_field">Группа крови</span>
+                                    <span class="reset_field"></span>
+                                </label>
+                                <label class="wrap_field">
+                                    <input type="text" class="field deactive_field" required disabled>
+                                    <span class="text_field">Резус фактор</span>
+                                    <span class="reset_field"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="item_form item_form_lg">
+                            <label class="checkbox">
+                                <input type="checkbox" class="inactive" name="check1">
+                                <p>Другая помощь</p>
+                            </label>
+                            <label class="wrap_field">
+                                <input type="text" class="field deactive_field" required disabled>
+                                <span class="text_field">Опишите своими словами</span>
+                                <span class="reset_field"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="tab tab_4">
+                        <div class="scale_form"><span></span></div>
+                        <h2>На сколько регулярно вы можете оказывать помощь?</h2>
+                        <div class="regularly">
+                            <div class="wrap_fields">
+                                <div class="item_form">
+                                    <label>
+                                        <input type="text" class="field" required>
+                                        <span class="text_field">Сколько раз в месяц?</span>
+                                        <span class="reset_field"></span>
+                                    </label>
+                                </div>
+                                <div class="item_form">
+                                    <label>
+                                        <input type="text" class="field" required>
+                                        <span class="text_field">Удобное время</span>
+                                        <span class="reset_field"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="wrap_checkbox">
+                                <div class="item_checkbox">
+                                    <label class="checkbox">
+                                        <input type="checkbox" name="check">
+                                        <p>В любой день</p>
+                                    </label>
+                                    <label class="checkbox">
+                                        <input type="checkbox" name="check">
+                                        <p>Понедельник</p>
+                                    </label>
+                                    <label class="checkbox">
+                                        <input type="checkbox" name="check">
+                                        <p>Вторник</p>
+                                    </label>
+                                    <label class="checkbox">
+                                        <input type="checkbox" name="check">
+                                        <p>Среда</p>
+                                    </label>
+                                </div>
+                                <div class="item_checkbox">
+                                    <label class="checkbox">
+                                        <input type="checkbox" name="check">
+                                        <p>Четверг</p>
+                                    </label>
+                                    <label class="checkbox">
+                                        <input type="checkbox" name="check">
+                                        <p>Пятница</p>
+                                    </label>
+                                    <label class="checkbox">
+                                        <input type="checkbox" name="check">
+                                        <p>Суббота</p>
+                                    </label>
+                                    <label class="checkbox">
+                                        <input type="checkbox" name="check">
+                                        <p>Воскресенье</p>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form_buttons">
+                    <a href="#" class="back link link_prev">Назад</a>
+                    <a href="#" class="next btn">Продолжить</a>
+                    <button id="submit" type="submit">Отправить заявку</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div class="wrapper">
+            <div class="info_foot">
+                <a href="index.html" class="logo_foot"><img src="img/logo-foot.png" alt=""></a>
+                <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+                <div class="social">
+                    <a href="#"><img src="img/google.png" alt="Alt"></a>
+                    <a href="#"><img src="img/fb.png" alt="Alt"></a>
+                    <a href="#"><img src="img/whatsapp.png" alt="Alt"></a>
+                </div>
+            </div>
+            <div class="text_foot">Указанная стоимость услуг основана на предоставленной Вами информации, а также стандартных тарифах и может уменьшиться или увеличиться после уточнения параметров Вашего груза.<br> Транзитное время указывается ориентировочно. Фактическое транзитное время может отличаться. Разница зависит от времени приема груза, дополнительных<br> услуг, характеристик отправленного груза и/или требований регулирующих органов. Presco Freight не несет ответственность за разницу между значениями ориентировочного и фактического транзитного времени.</div>
+        </div>
+    </footer>
+	
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
