@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Фирма Солнышко</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/main.css">
+	<!--[if lte IE 8]>
+		<script src="js/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<header class="main_head">
+		<div class="top_head">
+			<div class="wrapper">
+				<div class="logo">
+					<a href="/"><img src="img/logo.png" alt="Alt"></a>
+					<div class="slogan">Качество и надежность<br> с хорошим настроением!</div>
+				</div>
+				<div class="wrap_top">
+					<div class="top_menu">
+						<ul>
+							<li class="active"><a href="#">Главная</a></li>
+							<li><a href="#">О нас</a></li>
+							<li><a href="#">Производство</a></li>
+							<li><a href="payment.html">Оплата</a></li>
+							<li><a href="delivery.html">Доставка</a></li>
+							<li><a href="#">Отзывы</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</div>
+					<div class="contacts_head">
+						<div class="address"><img src="img/address.svg" class="svg" alt="Alt"> <p><span>Санкт-Петербург</span>,<br> наб. Обводного Канала,<br> 223/225 лит. М.</p></div>
+						<div class="schedule"><img src="img/clock.svg" class="svg" alt="Alt"> <p><span>Пн-Чт:</span> 10:00-18:00<br> <span>Пт:</span> 10:00-17:00<br> без обеда</div>
+						<div class="phone"><img src="img/phone.svg" class="svg" alt="Alt"> <a href="tel:+78127027341">+7 (812) 702-73-41</a> <a href="tel:+78122518721">+7 (812) 251-87-21</a> <a href="tel:+7901314-20-65">+7 (901) 314-20-65</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="menu_head">
+			<div class="wrapper">
+				<nav class="menu">
+					<ul>
+						<li class="catalog_menu dropdown"><img src="img/open-menu.svg" class="svg" alt="Alt">Каталог товаров
+							<ul class="drop_menu">
+								<li><a href="catalog.html"><img src="img/tshirt.svg" class="svg" alt="Alt">Футболки</a></li>
+								<li><a href="#"><img src="img/tshirt.svg" class="svg" alt="Alt">Майки</a></li>
+								<li class="link_inner"><img src="img/tshirt.svg" class="svg" alt="Alt"><span>Толстовки</span>
+									<ul class="inner_menu">
+										<li><a href="#">Толстовки с капюшоном</a></li>
+										<li><a href="#">Толстовки без капюнона</a></li>
+									</ul>
+								</li>
+								<li><a href="#"><img src="img/tshirt.svg" class="svg" alt="Alt">Лонгсливы</a></li>
+								<li><a href="#"><img src="img/tshirt.svg" class="svg" alt="Alt">Ветровки</a></li>
+								<li><a href="#"><img src="img/tshirt.svg" class="svg" alt="Alt">Трикотажные штаны</a></li>
+								<li><a href="#"><img src="img/tshirt.svg" class="svg" alt="Alt">Передники</a></li>
+								<li class="link_inner"><img src="img/tshirt.svg" class="svg" alt="Alt"><span>Маски / Головные уборы</span>
+									<ul class="inner_menu inner_menu_last">
+										<li><a href="#">Маски</a></li>
+										<li><a href="#">Бейсболки</a></li>
+										<li><a href="#">Шапки</a></li>
+										<li><a href="#">Банданы</a></li>
+										<li><a href="#">Косынки</a></li>
+									</ul>
+								</li>
+								<li><a href="#"><img src="img/tshirt.svg" class="svg" alt="Alt">Сумки</a></li>
+								<li><a href="#"><img src="img/tshirt.svg" class="svg" alt="Alt">Сувениры</a></li>
+							</ul>
+						</li>
+						<li class="sale_menu"><a href="#">%</a></li>
+						<li class="services_menu dropdown"><img src="img/menu.svg" class="svg" alt="Alt">Услуги
+							<ul class="drop_menu">
+								<li class="link_inner"><img src="img/support.svg" class="svg" alt="Alt"><span>Шелкография</span>
+									<ul class="inner_menu">
+										<li><a href="#">Технология шелкографии</a></li>
+										<li><a href="#">Наши работы</a></li>
+										<li><a href="#">Цены</a></li>
+										<li><a href="#">Дизайнеру</a></li>
+									</ul>
+								</li>
+								<li class="link_inner"><img src="img/support.svg" class="svg" alt="Alt"><span>Шелкотрансфер</span>
+									<ul class="inner_menu">
+										<li><a href="#">Технология шелкотрансфера</a></li>
+										<li><a href="#">Наши работы</a></li>
+										<li><a href="#">Цены</a></li>
+										<li><a href="#">Дизайнеру</a></li>
+									</ul>
+								</li>
+								<li class="link_inner"><img src="img/support.svg" class="svg" alt="Alt"><span>Цифровая печать</span>
+									<ul class="inner_menu">
+										<li><a href="#">Технология цифровой печати</a></li>
+										<li><a href="#">Наши работы</a></li>
+										<li><a href="#">Цены</a></li>
+										<li><a href="#">Дизайнеру</a></li>
+									</ul>
+								</li>
+								<li class="link_inner"><img src="img/support.svg" class="svg" alt="Alt"><span>Тиснение на ежедневниках</span>
+									<ul class="inner_menu">
+										<li><a href="#">Технология тиснения</a></li>
+										<li><a href="#">Наши работы</a></li>
+										<li><a href="#">Цены на тиснение</a></li>
+										<li><a href="#">Дизайнеру</a></li>
+									</ul>
+								</li>
+								<li class="link_inner"><img src="img/support.svg" class="svg" alt="Alt"><span>Пошив под заказ</span>
+									<ul class="inner_menu">
+										<li><a href="#">Общая информация</a></li>
+										<li><a href="#">Наши работы</a></li>
+									</ul>
+								</li>
+								<li class="link_inner"><img src="img/support.svg" class="svg" alt="Alt"><span>Бирки</span>
+									<ul class="inner_menu">
+										<li><a href="#">Бирки на заказ</a></li>
+										<li><a href="#">Услуги дизайнера</a></li>
+									</ul>
+								</li>
+								<li><a href="#"><img src="img/support.svg" class="svg" alt="Alt">Дизайн</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+				<div class="search">
+					<form action="" class="form_search">
+						<input type="text" placeholder="Поиск">
+						<button><img src="img/search.svg" class="svg" alt="Alt"></button>
+					</form>
+				</div>
+				<div class="link_basket">
+					<div class="icon_basket">
+						<img src="img/bag.svg" class="svg" alt="Alt">
+						<span>3</span>
+					</div>
+					<div class="sum_basket">2800 ₽</div>
+					<div class="head_basket">
+						<div class="wrap_basket">
+							<div class="item_basket">
+								<div class="title_basket">
+									<div class="image_basket"><img src="img/polo.jpg" alt="Alt"></div>
+									<div class="name_basket">Толстовка "4 кармана" женская демисезонная</div>
+									<div class="color_basket">Цвет: <span>голубой</span></div>
+									<div class="size_basket">Размер: <span>M</span></div>
+								</div>
+								<div class="result_basket"><span>5 290</span> ₽</div>
+							</div>
+							<div class="item_basket">
+								<div class="title_basket">
+									<div class="image_basket"><img src="img/poloj.jpg" alt="Alt"></div>
+									<div class="name_basket">Толстовка "4 кармана" женская демисезонная</div>
+									<div class="color_basket">Цвет: <span>голубой</span></div>
+									<div class="size_basket">Размер: <span>M</span></div>
+								</div>
+								<div class="result_basket"><span>5 290</span> ₽</div>
+							</div>
+							<div class="item_basket">
+								<div class="title_basket">
+									<div class="image_basket"><img src="img/polo.jpg" alt="Alt"></div>
+									<div class="name_basket">Толстовка "4 кармана" женская демисезонная</div>
+									<div class="color_basket">Цвет: <span>голубой</span></div>
+									<div class="size_basket">Размер: <span>M</span></div>
+								</div>
+								<div class="result_basket"><span>5 290</span> ₽</div>
+							</div>
+						</div>
+						<div class="wrap_result">
+							<div class="result">Итого: <span>5290 ₽</span></div>
+						</div>
+						<a href="basket.html" class="btn">Перейти в корзину</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="content">
+		<ul class="breadrumbs">
+			<li><a href="/">Главная</a></li>
+			<li><a href="/">Толстовки</a></li>
+			<li><a href="/">Без капюшона</a></li>
+			<li>Свитшот летний женский</li>
+		</ul>
+		<div class="wrap_product">
+			<div class="image_product">
+				<div class="wrap_image">
+					<div class="scroll_naviganion">
+						<div class="controls center">
+							<button class="btn_nav prevPage"></button>
+							<button class="btn_nav nextPage"></button>
+						</div>
+						<div class="scrollbar">
+							<div class="handle">
+								<div class="mousearea"></div>
+							</div>
+						</div>
+					</div>
+					<div class="frame preview_image" id="scroll_preview">
+						<ul>
+							<li class="item_preview">
+								<img src="img/catalog/rakurs1.jpg">
+							</li>
+							<li class="item_preview">
+								<img src="img/catalog/rakurs2.jpg">
+							</li>
+							<li class="item_preview">
+								<img src="img/catalog/rakurs3.jpg">
+							</li>
+							<li class="item_preview">
+								<img src="img/catalog/rakurs4.jpg">
+							</li>
+							<li class="item_preview">
+								<img src="img/catalog/rakurs5.jpg">
+							</li>
+							<li class="item_preview">
+								<img src="img/catalog/rakurs6.jpg">
+							</li>
+							<li class="item_preview">
+								<img src="img/catalog/rakurs7.jpg">
+							</li>
+						</ul>
+					</div>
+					<div class="detail_image">
+						<img src="img/catalog/rakurs1.jpg">
+					</div>
+				</div>
+			</div>
+			<div class="text_product">
+				<div class="title_product">
+					<h1>Свитшот летний женский</h1>
+					<div class="tag_product tag_new">new</div>
+				</div>	
+				<div class="price_product">от <span>558</span> <a href="#price_product" class="link_text link_scroll">Смотреть оптовые цены</a></div>
+				<div class="colors_product">
+					<p>Цвет: <span>Белый</span></p>
+					<div class="wrap_color">
+						<div class="frame" id="scroll_colors">
+							<ul>
+								<li class="item_color">
+									<img src="img/catalog/womensweatshirtwhite.jpg" data-color="Белый">
+								</li>
+								<li class="item_color">
+									<img src="img/catalog/womensweatshirtblue.jpg" data-color="Мята">
+								</li>
+								<li class="item_color">
+									<img src="img/catalog/womensweatshirtmelange.jpg" data-color="Меланж">
+								</li>
+								<li class="item_color">
+									<img src="img/catalog/womensweatshirtrose.jpg" data-color="Сухая роза">
+								</li>
+								<li class="item_color">
+									<img src="img/catalog/womensweatshirtsandy.jpg" data-color="Мокрый песок">
+								</li>
+								<li class="item_color">
+									<img src="img/catalog/womensweatshirtpistachio.jpg" data-color="Фисташка">
+								</li>
+								<li class="item_color">
+									<img src="img/catalog/womensweatshirtred.jpg" data-color="Красный">
+								</li>
+								<li class="item_color">
+									<img src="img/catalog/womensweatshirtroyablue.jpg" data-color="Василек">
+								</li>
+								<li class="item_color">
+									<img src="img/catalog/womensweatshirtbordo.jpg" data-color="Бордо">
+								</li>
+								<li class="item_color">
+									<img src="img/catalog/womensweatshirtindigo.jpg" data-color="Индиго">
+								</li>
+								<li class="item_color">
+									<img src="img/catalog/womensweatshirtblack.jpg" data-color="Черный">
+								</li>
+							</ul>
+						</div>
+						<div class="scroll_naviganion">
+							<div class="controls center">
+								<button class="btn_nav prevPage"></button>
+								<button class="btn_nav nextPage"></button>
+							</div>
+							<div class="scrollbar">
+								<div class="handle">
+									<div class="mousearea"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="size_product">
+					<p>Размер:</p>
+					<div class="wrap_size">
+						<span>XS</span>
+						<span>S</span>
+						<span class="active">M</span>
+						<span>L</span>
+						<span>XL</span>
+						<a href="#table_size" class="link_text">Размерная сетка</a>
+					</div>
+					<div class="hidden">
+						<div id="table_size" class="popup popup_size">
+							<div class="title_popup">Таблица размеров</div>	
+							<table class="table">
+								<tr>
+									<td>Маркировка</td>
+									<td>XS</td>
+									<td>S</td>
+									<td>M</td>
+		                            <td>L</td>
+		                            <td>XL</td>
+								</tr>
+								<tr>
+									<td>Размер</td>
+									<td>40-42</td>
+									<td>42-44</td>
+									<td>44-46</td>
+		                            <td>46-48</td>
+		                            <td>48-50</td>
+								</tr>
+								<tr>
+									<td>Ширина</td>
+									<td>45 см.</td>
+									<td>47 см.</td>
+									<td>49 см.</td>
+		                            <td>51 см.</td>
+		                            <td>54 см.</td>
+								</tr>
+								<tr>
+									<td>Длина</td>
+									<td>61 см.</td>
+									<td>62 см.</td>
+									<td>64 см.</td>
+		                            <td>66 см.</td>
+		                            <td>68 см.</td>
+								</tr>
+							</table>
+							<a href="#" class="link_size link_text">Как снять мерки <img src="img/down-arrow.svg" class="svg"></a>
+							<div class="image_size">
+								<div>
+									<div class="item_size">
+										<span>Ширина</span>
+										<img src="img/sizeA.jpg">
+									</div>
+									<div class="item_size">
+										<span>Длина</span>
+										<img src="img/sizeB.jpg">
+									</div>
+								</div>
+							</div>	
+						</div>
+					</div>	
+				</div>
+				<div class="number_product">
+					<p>Количество:</p>
+					<div class="number_basket">
+						<div class="wrap_num">
+							<div class="min">-</div>
+							<input class="num" type="text" placeholder="1" value="1">
+							<div class="pls">+</div>
+						</div>
+					</div>
+				</div>
+				<a href="#" class="btn btn_basket"><img src="img/bag.svg" class="svg" alt="Alt">В корзину</a>
+			</div>
+		</div>
+		<div id="price_product" class="wrap_product">
+			<div class="info_product">
+				<h2>Описание</h2>
+				<p>Летние свитшоты женские SUN выполнены из 2-х ниточного футера без начёса премиального качества «Пенье».<br>
+				Состав ткани 75% хлопка, 20% полиэстера и 5% лайкры.<br> 
+				Силуэт свободный, слегка приталенный. Рукава формы «реглан». Горлышко, манжеты, низ изделия обработаны резинкой «кошкорсе» в тон.</p>
+				<ul>
+					<li><div><span>Производство:</span></div> <div>Россия</div></li>
+					<li><div><span>Плотность:</span></div> <div>230-250 гр.</div></li>
+					<li><div><span>Размерный ряд:</span></div> <div>XS-XL</div></li>
+				</ul>
+			</div>
+			<div class="info_product">
+				<h2>Оптовые цены</h2>
+				<table class="table">
+					<tr>
+						<td>Кол-во (шт.)</td>
+						<td>до 10</td>
+						<td>до 50</td>
+						<td>до 100</td>
+						<td>до 500</td>
+						<td>до 1000</td>
+						<td>от 1001</td>
+					</tr>
+					<tr>
+						<td>Цена (руб.)</td>
+						<td>558</td>
+						<td>543</td>
+						<td>527</td>
+						<td>512</td>
+						<td>496</td>
+						<td>481</td>
+					</tr>
+				</table>
+			</div>	
+		</div>
+		<section class="recommend">
+			<h2><span>Вам может быть интересно</span></h2>
+			<div class="carousel carousel_recommend">
+				<div class="item_catalog">
+                    <div class="image_catalog"><img src="img/polo.jpg" alt="Alt"></div>
+                    <div class="title_catalog">Толстовка "4 кармана" женская демисезонная</div>
+                    <a href="#" class="link_like"><img src="img/heart.svg" alt="Alt" class="svg"></a>
+                    <div class="tag_product tag_new">new</div>
+                    <div class="foot_catalog">
+                        <div class="size_catalog">XS – XXL</div>
+                        <div class="price_catalog">от <span>1 200</span></div>
+                    </div>
+                    <div class="colors_catalog">
+                        <span><img src="img/color2.jpg" alt=""></span>
+                        <span><img src="img/color3.jpg" alt=""></span>
+                        <span><img src="img/color4.jpg" alt=""></span>
+                        <span><img src="img/color5.jpg" alt=""></span>
+                        <span><img src="img/color6.jpg" alt=""></span>
+                        <span><img src="img/color7.jpg" alt=""></span>
+                        <span><img src="img/color8.jpg" alt=""></span>
+                        <span><img src="img/color9.jpg" alt=""></span>
+                        <span><img src="img/color10.jpg" alt=""></span>
+                        <span><img src="img/color2.jpg" alt=""></span>
+                        <span><img src="img/color3.jpg" alt=""></span>
+                        <span><img src="img/color4.jpg" alt=""></span>
+                        <span><img src="img/color5.jpg" alt=""></span>
+                        <span><img src="img/color6.jpg" alt=""></span>
+                        <span><img src="img/color7.jpg" alt=""></span>
+                        <span><img src="img/color8.jpg" alt=""></span>
+                        <span><img src="img/color9.jpg" alt=""></span>
+                        <span><img src="img/color10.jpg" alt=""></span>
+                    </div>
+                    <div class="buttons_catalog">
+						<a href="product.html" class="btn">Подробнее</a>
+						<a href="product.html" class="btn btn_add"><img src="img/add.svg" alt="Alt"></a>
+					</div>
+                </div>
+				<div class="item_catalog">
+                    <div class="image_catalog"><img src="img/poloj.jpg" alt="Alt"></div>
+                    <div class="title_catalog">Толстовка "4 кармана" женская демисезонная</div>
+                    <a href="#" class="link_like"><img src="img/heart.svg" alt="Alt" class="svg"></a>
+                    <div class="foot_catalog">
+                        <div class="size_catalog">XS – XXL</div>
+                        <div class="price_catalog">от <span>1 200</span></div>
+                    </div>
+                    <div class="colors_catalog">
+                        <span><img src="img/color2.jpg" alt=""></span>
+                        <span><img src="img/color3.jpg" alt=""></span>
+                        <span><img src="img/color4.jpg" alt=""></span>
+                        <span><img src="img/color5.jpg" alt=""></span>
+                        <span><img src="img/color6.jpg" alt=""></span>
+                        <span><img src="img/color7.jpg" alt=""></span>
+                        <span><img src="img/color8.jpg" alt=""></span>
+                        <span><img src="img/color9.jpg" alt=""></span>
+                        <span><img src="img/color10.jpg" alt=""></span>
+                        <span><img src="img/color2.jpg" alt=""></span>
+                        <span><img src="img/color3.jpg" alt=""></span>
+                        <span><img src="img/color4.jpg" alt=""></span>
+                        <span><img src="img/color5.jpg" alt=""></span>
+                        <span><img src="img/color6.jpg" alt=""></span>
+                        <span><img src="img/color7.jpg" alt=""></span>
+                        <span><img src="img/color8.jpg" alt=""></span>
+                        <span><img src="img/color9.jpg" alt=""></span>
+                        <span><img src="img/color10.jpg" alt=""></span>
+                    </div>
+                    <div class="buttons_catalog">
+						<a href="product.html" class="btn">Подробнее</a>
+						<a href="product.html" class="btn btn_add"><img src="img/add.svg" alt="Alt"></a>
+					</div>
+                </div>
+                <div class="item_catalog">
+                    <div class="image_catalog"><img src="img/polo.jpg" alt="Alt"></div>
+                    <div class="title_catalog">Толстовка "4 кармана" женская демисезонная</div>
+                    <a href="#" class="link_like"><img src="img/heart.svg" alt="Alt" class="svg"></a>
+                    <div class="tag_product tag_new">new</div>
+                    <div class="foot_catalog">
+                        <div class="size_catalog">XS – XXL</div>
+                        <div class="price_catalog">от <span>1 200</span></div>
+                    </div>
+                    <div class="colors_catalog">
+                        <span><img src="img/color2.jpg" alt=""></span>
+                        <span><img src="img/color3.jpg" alt=""></span>
+                        <span><img src="img/color4.jpg" alt=""></span>
+                        <span><img src="img/color5.jpg" alt=""></span>
+                        <span><img src="img/color6.jpg" alt=""></span>
+                        <span><img src="img/color7.jpg" alt=""></span>
+                        <span><img src="img/color8.jpg" alt=""></span>
+                        <span><img src="img/color9.jpg" alt=""></span>
+                        <span><img src="img/color10.jpg" alt=""></span>
+                        <span><img src="img/color2.jpg" alt=""></span>
+                        <span><img src="img/color3.jpg" alt=""></span>
+                        <span><img src="img/color4.jpg" alt=""></span>
+                        <span><img src="img/color5.jpg" alt=""></span>
+                        <span><img src="img/color6.jpg" alt=""></span>
+                        <span><img src="img/color7.jpg" alt=""></span>
+                        <span><img src="img/color8.jpg" alt=""></span>
+                        <span><img src="img/color9.jpg" alt=""></span>
+                        <span><img src="img/color10.jpg" alt=""></span>
+                    </div>
+                    <div class="buttons_catalog">
+						<a href="product.html" class="btn">Подробнее</a>
+						<a href="product.html" class="btn btn_add"><img src="img/add.svg" alt="Alt"></a>
+					</div>
+                </div>
+                <div class="item_catalog">
+                    <div class="image_catalog"><img src="img/poloj.jpg" alt="Alt"></div>
+                    <div class="title_catalog">Толстовка "4 кармана" женская демисезонная</div>
+                    <a href="#" class="link_like"><img src="img/heart.svg" alt="Alt" class="svg"></a>
+                    <div class="foot_catalog">
+                        <div class="size_catalog">XS – XXL</div>
+                        <div class="price_catalog">от <span>1 200</span></div>
+                    </div>
+                    <div class="colors_catalog">
+                        <span><img src="img/color2.jpg" alt=""></span>
+                        <span><img src="img/color3.jpg" alt=""></span>
+                        <span><img src="img/color4.jpg" alt=""></span>
+                        <span><img src="img/color5.jpg" alt=""></span>
+                        <span><img src="img/color6.jpg" alt=""></span>
+                        <span><img src="img/color7.jpg" alt=""></span>
+                        <span><img src="img/color8.jpg" alt=""></span>
+                        <span><img src="img/color9.jpg" alt=""></span>
+                        <span><img src="img/color10.jpg" alt=""></span>
+                        <span><img src="img/color2.jpg" alt=""></span>
+                        <span><img src="img/color3.jpg" alt=""></span>
+                        <span><img src="img/color4.jpg" alt=""></span>
+                        <span><img src="img/color5.jpg" alt=""></span>
+                        <span><img src="img/color6.jpg" alt=""></span>
+                        <span><img src="img/color7.jpg" alt=""></span>
+                        <span><img src="img/color8.jpg" alt=""></span>
+                        <span><img src="img/color9.jpg" alt=""></span>
+                        <span><img src="img/color10.jpg" alt=""></span>
+                    </div>
+                    <div class="buttons_catalog">
+						<a href="product.html" class="btn">Подробнее</a>
+						<a href="product.html" class="btn btn_add"><img src="img/add.svg" alt="Alt"></a>
+					</div>
+                </div>
+                <div class="item_catalog">
+                    <div class="image_catalog"><img src="img/polo.jpg" alt="Alt"></div>
+                    <div class="title_catalog">Толстовка "4 кармана" женская демисезонная</div>
+                    <a href="#" class="link_like"><img src="img/heart.svg" alt="Alt" class="svg"></a>
+                    <div class="foot_catalog">
+                        <div class="size_catalog">XS – XXL</div>
+                        <div class="price_catalog">от <span>1 200</span></div>
+                    </div>
+                    <div class="colors_catalog">
+                        <span><img src="img/color2.jpg" alt=""></span>
+                        <span><img src="img/color3.jpg" alt=""></span>
+                        <span><img src="img/color4.jpg" alt=""></span>
+                        <span><img src="img/color5.jpg" alt=""></span>
+                        <span><img src="img/color6.jpg" alt=""></span>
+                        <span><img src="img/color7.jpg" alt=""></span>
+                        <span><img src="img/color8.jpg" alt=""></span>
+                        <span><img src="img/color9.jpg" alt=""></span>
+                        <span><img src="img/color10.jpg" alt=""></span>
+                        <span><img src="img/color2.jpg" alt=""></span>
+                        <span><img src="img/color3.jpg" alt=""></span>
+                        <span><img src="img/color4.jpg" alt=""></span>
+                        <span><img src="img/color5.jpg" alt=""></span>
+                        <span><img src="img/color6.jpg" alt=""></span>
+                        <span><img src="img/color7.jpg" alt=""></span>
+                        <span><img src="img/color8.jpg" alt=""></span>
+                        <span><img src="img/color9.jpg" alt=""></span>
+                        <span><img src="img/color10.jpg" alt=""></span>
+                    </div>
+                    <div class="buttons_catalog">
+						<a href="product.html" class="btn">Подробнее</a>
+						<a href="product.html" class="btn btn_add"><img src="img/add.svg" alt="Alt"></a>
+					</div>
+                </div>
+			</div>	
+		</section>
+	</div>
+	<footer>
+		<div class="wrapper">
+			<div class="info_foot">
+				<a href="/" class="logo">
+					<img src="img/logo_foot.png" alt="Alt">
+				</a>
+				<div class="address_foot"><img src="img/call.svg" alt="Alt" class="svg"> Санкт-Петербург, наб. Обводного канала, д.223/225, литера М, территория фабрики «Веретено»</div>
+				<div class="phone_foot">
+					<img src="img/mail.svg" alt="Alt" class="svg">
+					<span>+7 (812) 251-87-21</span>
+					<span>+7 (812) 702-73-41</span>
+					<span>+7 (901) 314-20-65</span>
+				</div>
+				<div class="social">
+					<span>Мы в социальных сетях:</span>
+					<a href="#"><img src="img/vk.png" alt="Alt"></a>
+					<a href="#"><img src="img/instagram.png" alt="Alt"></a>
+				</div>
+			</div>
+			<div class="menu_foot">
+				<div class="title_foot">О компании</div>
+				<ul>
+					<li><a href="#">Производство</a></li>
+					<li><a href="#">Политика предприятия</a></li>
+					<li><a href="#">Реквизиты</a></li>
+				</ul>
+			</div>
+			<div class="menu_foot">
+				<div class="title_foot">Помощь</div>
+				<ul>
+					<li><a href="#">Как купить со склада</a></li>
+					<li><a href="#">Как заказать нанесение</a></li>
+					<li><a href="#">Как заказать бирки</a></li>
+					<li><a href="#">Как заказать пошив</a></li>
+					<li><a href="#">Советы дизайнерам</a></li>
+					<li><a href="#">Рекомендации по стирке</a></li>
+				</ul>
+			</div>
+			<div class="menu_foot">
+				<div class="title_foot">Информация</div>
+				<ul>
+					<li><a href="#">Доставка</a></li>
+					<li><a href="#">Упаковка</a></li>
+					<li><a href="#">Для клиентов</a></li>
+					<li><a href="#">Для конкурентов</a></li>
+					<li><a href="#">Для РА</a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+	
+	<script src="js/libs.min.js"></script>
+	<script src="js/main.js"></script>
+	
+</body>
+</html>
