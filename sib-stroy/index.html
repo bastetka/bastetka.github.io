@@ -12,14 +12,14 @@
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <header class="main_head">
+    <header class="main_head header">
         <div class="menu_head">
             <div class="wrap_menu">
                 <nav>
                     <img src="img/title_menu.png" alt="Alt">
                     <ul class="menu">
-                        <li><a href="#sales">Акции</a></li>
-                        <li><a href="#prices">Цены</a></li>
+                        <li><a href="#services">Услуги</a></li>
+                        <li><a href="#sale">Акции</a></li>
                         <li><a href="#about">О компании</a></li>
                         <li><a href="#portfolio">Портфолио</a></li>
                         <li><a href="#contacts">Контакты</a></li>
@@ -28,15 +28,20 @@
                 <a href="mailto:sib-stroi-komfort@mail.ru" class="email_head">sib-stroi-komfort@mail.ru</a>
             </div>
         </div>
-        <a href="#" class="toggle_menu"><span></span></a>
-        <div class="wrap_head">
-            <div class="text_head">
-                <a href="index.html" class="logo"><img src="img/logo.png" alt="Строительство и ремонт"></a>
-                <h1>Услуги строительства</h1>
-                <div class="wrap_btn">
-                    <a href="#" class="btn">Заказать звонок</a>
+        <div class="navigation_head">    
+            <a href="#" class="toggle_menu"><span></span></a>
+            <a href="#callback" class="btn"></a>
+            <div class="social_head">  
+                <div class="item_social">
+                    <a href="mailto:sib-stroi-komfort@mail.ru" class="email"></a>
+                    <a href="https://ok.ru/sibstroikomfort" target="_blank" class="od"></a>
+                    <a href="https://vk.com/ooo_ssk" target="_blank" class="vk"></a>
+                    <a href="https://www.instagram.com/sib_stroi_komfort/" target="_blank" class="inst"></a>
+                    <a href="https://go.2gis.com/ka0el" target="_blank" class="gis"></a>
                 </div>
-            </div>
+            </div>   
+        </div>
+        <div class="wrap_head main_wrap_head">
             <div class="contats_head">
                 <div class="wrapper">
                     <div class="wrap_contacts">
@@ -55,118 +60,166 @@
                 </div>
             </div>
         </div>
-        <div class="bg_video">
-            <video autoplay="" muted="" playsinline="" loop="" src="img/Строительство_3.mp4"></video>
-        </div>
-        <div class="overlay_head"></div>
     </header>
-    <section id="sales" class="services services_stroy">
+    <section id="services" class="services services_main">
         <div class="wrapper">
-            <div class="wrap_services">
-                <div class="item_services">
-                    <div class="title_services">Строительство дома из кирпича</div>
-                    <ul class="list_services">
-                        <li>-разметка территории</li>
-                        <li>-устройство фундамента</li>
-                        <li>-устройство стен из бруса</li>
-                        <li>-утепление стен</li>
-                        <li>-кладка стен из кирпича</li>
-                        <li>-устройство крыши из профнастила</li>
-                        <li>-установка дверей и окон</li>
-                        <li>-устройство карниза и откосов</li>
-                    </ul>
-                    <div class="price_services">от 15000 за 1м2</div>
+            <div class="carousel_services slider-for">
+                <div class="item_serv" style="background: url(../img/serv-1.png);">
+                    <div class="title_serv">услуги транспортировки грузов</div>
+                    <a href="trucking.html" class="btn_serv">Подробнее</a>
                 </div>
-                <div class="item_services">
-                    <div class="title_services">Строительство гаража<br> из кирпича</div>
-                    <ul class="list_services">
-                        <li>-устроство фундамента</li>
-                        <li>-устройство бетонных полов</li>
-                        <li>-Устройство ямы</li>
-                        <li>-Кладка стен из кирпича</li>
-                        <li>-устройство крыши из профнастила</li>
-                        <li>-установка ворот</li>
-                        <li>-установка двери и окон</li>
-                    </ul>
-                    <div class="price_services">от 15000 за 1м2</div>
+                <div class="item_serv" style="background: url(../img/serv-2.png);">
+                    <div class="title_serv">Услуги спецтехники</div>
+                    <a href="equipment.html" class="btn_serv">Подробнее</a>
                 </div>
-                <div class="item_services">
-                    <div class="title_services">Строительство бани<br> из бруса</div>
-                    <ul class="list_services">
-                        <li>-устройство сливной ямы</li>
-                        <li>-устройство фундамента</li>
-                        <li>-устройство полов из досок</li>
-                        <li>-монтаж стен из бруса</li>
-                        <li>-установка дверей и окон</li>
-                        <li>-монтаж печи</li>
-                        <li>-устройство дымохода</li>
-                        <li>-устройство крыши из профнастила</li>
-                    </ul>
-                    <div class="price_services">от 15000 за 1м2</div>
+                <div class="item_serv" style="background: url(../img/serv-3.png);">
+                    <div class="title_serv">строительные услуги</div>
+                    <a href="construction.html" class="btn_serv">Подробнее</a>
+                </div>
+                <div class="item_serv" style="background: url(../img/serv-4.png);">
+                    <div class="title_serv">демонтажные<br> работы</div>
+                    <a href="dismantling.html" class="btn_serv">Подробнее</a>
+                </div>
+                <div class="item_serv" style="background: url(../img/serv-5.png);">
+                    <div class="title_serv">Услуги<br> ремонта и отделки</div>
+                    <a href="repair.html" class="btn_serv">Подробнее</a>
+                </div>
+            </div>
+            <div class="wrap_preview">
+                <div class="carousel_preview slider-nav">
+                    <div class="item_preview">
+                        <img src="img/preview-2.png" alt="Alt" />
+                    </div>
+                    <div class="item_preview">
+                        <img src="img/preview-3.png" alt="Alt" />
+                    </div>
+                    <div class="item_preview">
+                        <img src="img/preview-4.png" alt="Alt" />
+                    </div>
+                    <div class="item_preview">
+                        <img src="img/preview-5.png" alt="Alt" />
+                    </div>
+                    <div class="item_preview">
+                        <img src="img/preview-4.png" alt="Alt" />
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <section id="prices" class="catalog">
+    <section id="sale" class="sale">
         <div class="wrapper">
-            <div class="wrap_catalog">
-                <div class="item_catalog">
-                    <img src="img/stroy-1.png" alt="Alt">
-                    <div class="title_catalog">Дома из бруса</div>
-                    <div class="price_catalog">цена от 1500 за 1м2</div>
+            <h2>Акции</h2>
+            <div class="wrap_sale">
+                <div class="item_sale">
+                    <img src="img/sale-1.png" alt="Alt">
+                    <div class="title_sale">строительство  дома под ключ из бруса</div>
+                    <div class="price_sale">
+                        <div class="old_price">от 12000 за 1м2</div>
+                        <div class="price_catalog">от 10000 за 1м2</div>
+                    </div>
                 </div>
-                <div class="item_catalog">
-                    <img src="img/stroy-2.png" alt="Alt">
-                    <div class="title_catalog">Каркасные дома</div>
-                    <div class="price_catalog">цена от 500 за услугу</div>
+                <div class="item_sale">
+                    <img src="img/sale-2.png" alt="Alt">
+                    <div class="title_sale">капитальный ремонт квартиры под ключ</div>
+                    <div class="price_sale">
+                        <div class="old_price">от 10000 за 1м2</div>
+                        <div class="price_catalog">от 8000 за 1м2</div>
+                    </div>
                 </div>
-                <div class="item_catalog">
-                    <img src="img/stroy-3.png" alt="Alt">
-                    <div class="title_catalog">Дома из кирпича</div>
-                    <div class="price_catalog">цена от 1000 за 1м2</div>
+                <div class="item_sale">
+                    <img src="img/sale-3.png" alt="Alt">
+                    <div class="title_sale">строительство бани<br> из бруса</div>
+                    <div class="price_sale">
+                        <div class="old_price">от 10000 за 1м2</div>
+                        <div class="price_catalog">от 9000 за 1м2</div>
+                    </div>
                 </div>
-                <div class="item_catalog">
-                    <img src="img/stroy-4.png" alt="Alt">
-                    <div class="title_catalog">Дома из блоков</div>
-                    <div class="price_catalog">цена от 1500 за 1м2</div>
+                <div class="item_sale">
+                    <img src="img/sale-4.png" alt="Alt">
+                    <div class="title_sale">аренда трактора для выполнения работ</div>
+                    <div class="price_sale">
+                        <div class="old_price">2500 за 1час</div>
+                        <div class="price_catalog">1500 за 1 час</div>
+                    </div>
                 </div>
-                <div class="item_catalog">
-                    <img src="img/stroy-5.png" alt="Alt">
-                    <div class="title_catalog">Строительство бани</div>
-                    <div class="price_catalog">цена от 500 за услугу</div>
+                <div class="item_sale">
+                    <img src="img/sale-5.png" alt="Alt">
+                    <div class="title_sale">аренда газели для транспортировки груза</div>
+                    <div class="price_sale">
+                        <div class="old_price">2000 за 1час</div>
+                        <div class="price_catalog">1000 за 1 час</div>
+                    </div>
                 </div>
-                <div class="item_catalog">
-                    <img src="img/stroy-6.png" alt="Alt">
-                    <div class="title_catalog">Строительство гаража</div>
-                    <div class="price_catalog">цена от 1000 за 1м2</div>
-                </div>
-                <div class="item_catalog">
-                    <img src="img/stroy-7.png" alt="Alt">
-                    <div class="title_catalog">Строительство<br> дачных домиков</div>
-                    <div class="price_catalog">цена от 1500 за 1м2</div>
-                </div>
-                <div class="item_catalog">
-                    <img src="img/stroy-8.png" alt="Alt">
-                    <div class="title_catalog">Строительство беседок</div>
-                    <div class="price_catalog">цена от 500 за услугу</div>
-                </div>
-                <div class="item_catalog">
-                    <img src="img/stroy-9.png" alt="Alt">
-                    <div class="title_catalog">Облагораживание территории</div>
-                    <div class="price_catalog">цена от 1000 за 1м2</div>
+                <div class="item_sale">
+                    <img src="img/sale-6.png" alt="Alt">
+                    <div class="title_sale">демонтаж металлоконструкций</div>
+                    <div class="price_sale">
+                        <div class="old_price">от 9000 за 1м2</div>
+                        <div class="price_catalog">от 6000 за 1м2</div>
+                    </div>
                 </div>
             </div>
         </div>
     </section> 
-    <section id="about" class="about about_stroy">
+    <section id="about" class="about about_main">
         <div class="wrapper">
+            <h2>О нас</h2>
             <div class="wrap_about">
                 <div class="text_about">ООО «Сиб-Строй-Комфорт» оказывает услуги по строительству, ремонту домов и квартир, жилых и нежилых помещений. Оказываем услуги по транспортировке грузов любой сложности. Выполняем работы с использованием спецтехники. Професиональное выполнение демонтажа конструкций любой сложности.</div>
                 <div class="image_about">
                     <img src="img/logo-about.png" alt="Alt">
                 </div>
             </div>
-            <div class="advantages advantages_stroy">
+            <div class="advan_about">
+                <div class="item_advan">
+                    <div class="icon_advan">
+                        <img src="img/advan-about-1.png" alt="Alt">
+                    </div>
+                    <span>оказываем услуги всегда точно в срок</span>
+                </div>
+                <div class="item_advan">
+                    <div class="icon_advan">
+                        <img src="img/advan-about-2.png" alt="Alt">
+                    </div>
+                    <span>прозрачная и понятная цена на услуги</span>
+                </div>
+                <div class="item_advan">
+                    <div class="icon_advan">
+                        <img src="img/advan-about-3.png" alt="Alt">
+                    </div>
+                    <span>помогаем с Подбором и просчетом матералов. имеем скидки в строительных магазинах.</span>
+                </div>
+                <div class="item_advan">
+                    <div class="icon_advan">
+                        <img src="img/advan-about-4.png" alt="Alt">
+                    </div>
+                    <span>Профессиональная команда сотрудников с многолетним опытом</span>
+                </div>
+                <div class="item_advan">
+                    <div class="icon_advan">
+                        <img src="img/advan-about-5.png" alt="Alt">
+                    </div>
+                    <span>Более 10 лет успешной работы. Работаем только по договору.</span>
+                </div>
+                <div class="item_advan">
+                    <div class="icon_advan">
+                        <img src="img/advan-about-6.png" alt="Alt">
+                    </div>
+                    <span>Поэтапный контроль и приемка выполненных работ</span>
+                </div>
+                <div class="item_advan">
+                    <div class="icon_advan">
+                        <img src="img/advan-about-7.png" alt="Alt">
+                    </div>
+                    <span>сотрудничаем с банками. Рассматриваем работу через ипотеку. Работаем с НДС и без ндс</span>
+                </div>
+            </div>
+            <div class="wrap_video">
+                <div class="video_about">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/45c6eoOJ4J4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="advantages">
                 <div class="item_advantages">
                     <div class="icon_advantages">
                         <img src="img/advan-1.png" alt="Alt">
@@ -205,102 +258,182 @@
             </div>
         </div>
     </section>
-    <section id="portfolio" class="portfolio">
+    <section id="portfolio" class="portfolio portfolio_main">
+        <h2>Портфолио</h2>
+        <div class="wrapper mfp_gallery">
+            <a href="img/portfolio-main-1.png" class="item_portfolio mfp">
+                <img src="img/portfolio-main-1.png" alt="Alt">
+            </a>
+            <a href="img/portfolio-main-2.png" class="item_portfolio mfp">
+                <img src="img/portfolio-main-2.png" alt="Alt">
+            </a>
+            <a href="img/portfolio-main-3.png" class="item_portfolio mfp">
+                <img src="img/portfolio-main-3.png" alt="Alt">
+            </a>
+            <a href="img/portfolio-main-4.png" class="item_portfolio mfp">
+                <img src="img/portfolio-main-4.png" alt="Alt">
+            </a>
+            <a href="img/portfolio-main-5.png" class="item_portfolio mfp">
+                <img src="img/portfolio-main-5.png" alt="Alt">
+            </a>
+            <a href="img/portfolio-main-6.png" class="item_portfolio mfp">
+                <img src="img/portfolio-main-6.png" alt="Alt">
+            </a>
+            <a href="img/portfolio-main-7.png" class="item_portfolio mfp">
+                <img src="img/portfolio-main-7.png" alt="Alt">
+            </a>
+            <a href="img/portfolio-main-8.png" class="item_portfolio mfp">
+                <img src="img/portfolio-main-8.png" alt="Alt">
+            </a>
+            <a href="img/portfolio-main-9.png" class="item_portfolio mfp">
+                <img src="img/portfolio-main-9.png" alt="Alt">
+            </a>
+            <a href="img/portfolio-main-10.png" class="item_portfolio mfp">
+                <img src="img/portfolio-main-10.png" alt="Alt">
+            </a>
+            <a href="img/portfolio-main-11.png" class="item_portfolio mfp">
+                <img src="img/portfolio-main-11.png" alt="Alt">
+            </a>
+            <a href="img/portfolio-main-12.png" class="item_portfolio mfp">
+                <img src="img/portfolio-main-12.png" alt="Alt">
+            </a>
+            <a href="img/portfolio-main-13.png" class="item_portfolio mfp">
+                <img src="img/portfolio-main-13.png" alt="Alt">
+            </a>
+            <a href="img/portfolio-main-14.png" class="item_portfolio mfp">
+                <img src="img/portfolio-main-14.png" alt="Alt">
+            </a>
+            <a href="img/portfolio-main-15.png" class="item_portfolio mfp">
+                <img src="img/portfolio-main-15.png" alt="Alt">
+            </a>
+            <a href="img/portfolio-main-16.png" class="item_portfolio mfp">
+                <img src="img/portfolio-main-16.png" alt="Alt">
+            </a>
+            <a href="img/portfolio-main-17.png" class="item_portfolio mfp">
+                <img src="img/portfolio-main-17.png" alt="Alt">
+            </a>
+            <a href="img/portfolio-main-18.png" class="item_portfolio mfp">
+                <img src="img/portfolio-main-18.png" alt="Alt">
+            </a>
+            <a href="img/portfolio-main-19.png" class="item_portfolio mfp">
+                <img src="img/portfolio-main-19.png" alt="Alt">
+            </a>
+            <a href="img/portfolio-main-20.png" class="item_portfolio mfp">
+                <img src="img/portfolio-main-20.png" alt="Alt">
+            </a>
+            <a href="img/portfolio-main-21.png" class="item_portfolio mfp">
+                <img src="img/portfolio-main-21.png" alt="Alt">
+            </a>
+            <a href="img/portfolio-main-22.png" class="item_portfolio mfp">
+                <img src="img/portfolio-main-22.png" alt="Alt">
+            </a>
+            <a href="img/portfolio-main-23.png" class="item_portfolio mfp">
+                <img src="img/portfolio-main-23.png" alt="Alt">
+            </a>
+            <a href="img/portfolio-main-24.png" class="item_portfolio mfp">
+                <img src="img/portfolio-main-24.png" alt="Alt">
+            </a>
+            <a href="img/portfolio-main-25.png" class="item_portfolio mfp">
+                <img src="img/portfolio-main-25.png" alt="Alt">
+            </a>
+            <a href="img/portfolio-main-26.png" class="item_portfolio mfp">
+                <img src="img/portfolio-main-26.png" alt="Alt">
+            </a>
+            <a href="img/portfolio-main-27.png" class="item_portfolio mfp">
+                <img src="img/portfolio-main-27.png" alt="Alt">
+            </a>
+            <a href="img/portfolio-main-28.png" class="item_portfolio mfp">
+                <img src="img/portfolio-main-28.png" alt="Alt">
+            </a>
+            <a href="img/portfolio-main-29.png" class="item_portfolio mfp">
+                <img src="img/portfolio-main-29.png" alt="Alt">
+            </a>
+            <a href="img/portfolio-main-30.png" class="item_portfolio mfp">
+                <img src="img/portfolio-main-30.png" alt="Alt">
+            </a>
+        </div>
+    </section>
+    <section class="clients">
         <div class="wrapper">
-            <div class="item_portfolio">
-                <img src="img/portfolio-1.png" alt="Alt">
-            </div>
-            <div class="item_portfolio">
-                <img src="img/portfolio-2.png" alt="Alt">
-            </div>
-            <div class="item_portfolio">
-                <img src="img/portfolio-3.png" alt="Alt">
-            </div>
-            <div class="item_portfolio">
-                <img src="img/portfolio-4.png" alt="Alt">
-            </div>
-            <div class="item_portfolio">
-                <img src="img/portfolio-5.png" alt="Alt">
-            </div>
-            <div class="item_portfolio">
-                <img src="img/portfolio-6.png" alt="Alt">
-            </div>
-            <div class="item_portfolio">
-                <img src="img/portfolio-7.png" alt="Alt">
-            </div>
-            <div class="item_portfolio">
-                <img src="img/portfolio-8.png" alt="Alt">
-            </div>
-            <div class="item_portfolio">
-                <img src="img/portfolio-9.png" alt="Alt">
-            </div>
-            <div class="item_portfolio">
-                <img src="img/portfolio-10.png" alt="Alt">
-            </div>
-            <div class="item_portfolio">
-                <img src="img/portfolio-11.png" alt="Alt">
-            </div>
-            <div class="item_portfolio">
-                <img src="img/portfolio-12.png" alt="Alt">
-            </div>
-            <div class="item_portfolio">
-                <img src="img/portfolio-13.png" alt="Alt">
-            </div>
-            <div class="item_portfolio">
-                <img src="img/portfolio-14.png" alt="Alt">
-            </div>
-            <div class="item_portfolio">
-                <img src="img/portfolio-15.png" alt="Alt">
-            </div>
-            <div class="item_portfolio">
-                <img src="img/portfolio-16.png" alt="Alt">
-            </div>
-            <div class="item_portfolio">
-                <img src="img/portfolio-17.png" alt="Alt">
-            </div>
-            <div class="item_portfolio">
-                <img src="img/portfolio-18.png" alt="Alt">
-            </div>
-            <div class="item_portfolio">
-                <img src="img/portfolio-19.png" alt="Alt">
-            </div>
-            <div class="item_portfolio">
-                <img src="img/portfolio-20.png" alt="Alt">
-            </div>
-            <div class="item_portfolio">
-                <img src="img/portfolio-21.png" alt="Alt">
-            </div>
-            <div class="item_portfolio">
-                <img src="img/portfolio-22.png" alt="Alt">
-            </div>
-            <div class="item_portfolio">
-                <img src="img/portfolio-23.png" alt="Alt">
-            </div>
-            <div class="item_portfolio">
-                <img src="img/portfolio-24.png" alt="Alt">
-            </div>
-            <div class="item_portfolio">
-                <img src="img/portfolio-25.png" alt="Alt">
-            </div>
-            <div class="item_portfolio">
-                <img src="img/portfolio-26.png" alt="Alt">
-            </div>
-            <div class="item_portfolio">
-                <img src="img/portfolio-27.png" alt="Alt">
-            </div>
-            <div class="item_portfolio">
-                <img src="img/portfolio-28.png" alt="Alt">
-            </div>
-            <div class="item_portfolio">
-                <img src="img/portfolio-29.png" alt="Alt">
-            </div>
-            <div class="item_portfolio">
-                <img src="img/portfolio-30.png" alt="Alt">
+            <div class="carousel_clients">
+                <div class="item_clients">
+                    <img src="img/client-1.png" alt="Alt">
+                </div>
+                <div class="item_clients">
+                    <img src="img/client-2.png" alt="Alt">
+                </div>
+                <div class="item_clients">
+                    <img src="img/client-3.png" alt="Alt">
+                </div>
+                <div class="item_clients">
+                    <img src="img/client-4.png" alt="Alt">
+                </div>
+                <div class="item_clients">
+                    <img src="img/client-1.png" alt="Alt">
+                </div>
+                <div class="item_clients">
+                    <img src="img/client-2.png" alt="Alt">
+                </div>
+                <div class="item_clients">
+                    <img src="img/client-3.png" alt="Alt">
+                </div>
             </div>
         </div>
     </section>
-    <section id="contacts" class="contacts">
+    <section class="director">
         <div class="wrapper">
+            <div class="wrap_director">
+                <div class="text_director">
+                    <div class="title_director">Генеральный директор <span>Игнатьев Роман Сергеевич</span></div>
+                    <p>Строительство дома, ремонт, переезд<br> это всегда очень сложный процесс<br> который требует множества времени и<br> сил.<br> Позвольте ооо «Сиб-строй-комфорт» сделать это за вас, сохранив ваше время и оставив лишь положительные эмоции!</p>
+                </div>
+                <div class="image_director">
+                    <img src="img/photo.png" alt="Alt">
+                </div>
+            </div>
+            <div class="carousel_documents">
+                <div class="item_document">
+                    <img src="img/document-1.png" alt="Alt">
+                </div>
+                <div class="item_document">
+                    <img src="img/document-2.png" alt="Alt">
+                </div>
+                <div class="item_document">
+                    <img src="img/document-3.png" alt="Alt">
+                </div>
+                <div class="item_document">
+                    <img src="img/document-4.png" alt="Alt">
+                </div>
+                <div class="item_document">
+                    <img src="img/document-5.png" alt="Alt">
+                </div>
+                <div class="item_document">
+                    <img src="img/document-6.png" alt="Alt">
+                </div>
+                <div class="item_document">
+                    <img src="img/document-1.png" alt="Alt">
+                </div>
+                <div class="item_document">
+                    <img src="img/document-2.png" alt="Alt">
+                </div>
+                <div class="item_document">
+                    <img src="img/document-3.png" alt="Alt">
+                </div>
+                <div class="item_document">
+                    <img src="img/document-4.png" alt="Alt">
+                </div>
+                <div class="item_document">
+                    <img src="img/document-5.png" alt="Alt">
+                </div>
+                <div class="item_document">
+                    <img src="img/document-6.png" alt="Alt">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contacts" class="contacts contacts_main">
+        <div class="wrapper">
+            <h2>Контактная информация</h2>
             <div class="text_contacts">
                 <p>
                     <span>г.Барнаул</span>
@@ -311,6 +444,14 @@
                 <p>
                     <a href="tel:+79833501545">+7(983)350-15-45</a>
                     <span>строительство и ремонт</span>
+                </p>
+                <p>
+                    <a href="tel:+79130909494">+7(913)090-94-94</a>
+                    <span>спецтехника и грузоперевозки</span>
+                </p>
+                <p>
+                    <a href="tel:+79836012121">+7(983)601-21-21</a>
+                    <span>Продажа строительного материала</span>
                 </p>
                 <div class="email_contacts">
                     <a href="mailto:sib-stroi-komfort@mail.ru">sib-stroi-komfort@mail.ru</a>
@@ -327,27 +468,47 @@
                         <span>Номер телефона</span>
                         <input type="tel" placeholder="+7(___)___-__-__" required>
                     </label>
+                    <button type="submit">Отправить</button> 
                 </form>
             </div>
         </div>
     </section>
-    <footer>
+    <footer class="footer_main">
         <div class="wrapper">
             <div class="wrap_social">
                 <div class="item_social">
                     <a href="mailto:sib-stroi-komfort@mail.ru" class="email">sib-stroi-komfort@mail.ru</a>
-                    <a href="" class="od">sibstroikomfort</a>
+                    <a href="https://ok.ru/sibstroikomfort" target="_blank" class="od">sibstroikomfort</a>
                 </div>
                 <div class="item_social">
-                    <a href="" class="vk">ooo_ssk</a>
-                    <a href="" class="inst">sib_stroi_komfort</a>
+                    <a href="https://vk.com/ooo_ssk" target="_blank" class="vk">ooo_ssk</a>
+                    <a href="https://www.instagram.com/sib_stroi_komfort/" target="_blank" class="inst">sib_stroi_komfort</a>
                 </div>
                 <div class="item_social">
-                    <a href="" class="gis">Алтайский край г.новоалтайск ул.переездная 2а</a>
+                    <a href="https://go.2gis.com/ka0el" target="_blank" class="gis">Алтайский край г.Новоалтайск ул.Партизанская 16</a>
                 </div>
             </div>
+            <div class="text_foot">готовы осуществить вашу мечту!</div>
         </div>
     </footer>
+    <div class="hidden">
+		<div id="callback" class="popup">
+            <div class="form_contacts">
+                <div class="title_form">оставьте заявку<br> на звонок</div>
+                <form action="">
+                    <label>
+                        <span>Имя</span>
+                        <input type="text" required>
+                    </label>
+                    <label>
+                        <span>Номер телефона</span>
+                        <input type="tel" placeholder="+7(___)___-__-__" required>
+                    </label>
+                    <button type="submit">Отправить</button> 
+                </form>
+            </div>
+        </div>
+    </div>
     
     <script src="js/libs.min.js"></script>
     <script src="js/main.js"></script>
