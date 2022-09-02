@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="153" height="154" viewBox="0 0 153 154">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #4a00ca;
+      }
+
+      .cls-1, .cls-2 {
+        fill-rule: evenodd;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        opacity: 0.79;
+      }
+
+      .cls-2 {
+        fill: #004eff;
+      }
+
+      .cls-3 {
+        fill: #0082c5;
+      }
+    </style>
+  </defs>
+  <path id="Эллипс_614" data-name="Эллипс 614" class="cls-1" d="M70.107,65.773a43.87,43.87,0,1,1-48.783,38.333A43.87,43.87,0,0,1,70.107,65.773Z"/>
+  <path id="Эллипс_614_копия" data-name="Эллипс 614 копия" class="cls-2" d="M113.211,20.214A43.87,43.87,0,1,1,64.428,58.547,43.87,43.87,0,0,1,113.211,20.214Z"/>
+  <circle id="Эллипс_614_копия_2" data-name="Эллипс 614 копия 2" class="cls-3" cx="44.75" cy="45.281" r="43.875"/>
+</svg>
