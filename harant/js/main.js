@@ -1,0 +1,1 @@
+jQuery(function(t){"use strict";t(".more_btn").click(function(){return t(this).toggleClass("active"),t(".list_price").toggleClass("hide"),t(".list_price").hasClass("hide")?t(".more_btn").html("Свернуть"):t(".more_btn").html("Развернуть"),!1})});
