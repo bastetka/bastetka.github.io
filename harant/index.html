@@ -23,16 +23,18 @@
                         <path d="M22.8787 11.6262C25.4633 11.6262 27.7297 12.1124 29.6779 13.0847C31.666 14.0571 33.2167 15.5351 34.33 17.5188C35.4433 19.5024 36 22.0112 36 25.045V36.2036C34.1504 37.9773 32.8443 38.8528 30.2744 40V25.6868C30.2744 22.6918 29.5189 20.4359 28.008 18.919C26.5368 17.4021 24.4493 16.6436 21.7455 16.6436C19.7177 16.6436 17.9483 17.0326 16.4374 17.8105C14.9264 18.5884 13.7535 19.7358 12.9185 21.2527C12.1232 22.7696 11.7256 24.6561 11.7256 26.912L11.8318 39.9313C9.61835 38.8478 8.24069 37.9469 6 35.7926V5.90238C7.97366 4.08977 9.15031 3.18136 11.5834 2L11.7256 20.2609L10.5924 18.0439C11.6263 16.0213 13.2167 14.4461 15.3638 13.3181C17.5109 12.1901 20.0159 11.6262 22.8787 11.6262Z" fill="white"/>
                     </svg>
                 </a>
-                <div class="country_head">
-                    <a href="#" class="select_country">Россия</a>
+                <div class="wrap_nav">
+                    <div class="country_head">
+                        <a href="#" class="select_country">Россия</a>
+                    </div>
+                    <nav>
+                        <ul class="menu_head">
+                            <li><a href="#">Найти юриста</a></li>
+                            <li><a href="#">Задать вопрос</a></li>
+                            <li><a href="#">Публикации</a></li>
+                        </ul>
+                    </nav>
                 </div>
-                <nav>
-                    <ul class="menu_head">
-                        <li><a href="#">Найти юриста</a></li>
-                        <li><a href="#">Задать вопрос</a></li>
-                        <li><a href="#">Публикации</a></li>
-                    </ul>
-                </nav>
             </div>
             <div class="links_head">
                 <div class="search_head">
@@ -203,7 +205,19 @@
                             <div class="wrap_filter">
                                 <form action="" class="form_filter">
                                     <div class="form_group">
-                                        
+                                        <label class="item_form search_filter">
+                                            <input type="text" placeholder="Поиск">
+                                        </label>
+                                    </div>
+                                    <div class="form_group">
+                                        <label class="item_form select_filter">
+                                            <input type="text" placeholder="Специализация">
+                                        </label>
+                                    </div>
+                                    <div class="form_group">
+                                        <label class="item_form select_filter">
+                                            <input type="text" placeholder="Город">
+                                        </label>
                                     </div>
                                 </form>
                             </div>
