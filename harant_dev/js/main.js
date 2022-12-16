@@ -1,1 +1,126 @@
-jQuery(function(n){"use strict";function t(){var e;n(window).width()<992?(n(".head_document .current_menu"),0==t.length&&(e=n(".sidebar_document .current_menu"),n(".sidebar_document .current_menu").remove(),n(".head_document").append(e),n(".head_document .current_menu ol").css({display:"none"}),n(".head_document .current_menu .title_menu").css({display:"block"}))):0==n(".sidebar_document .current_menu").length&&(e=n(".head_document .current_menu"),n(".head_document .current_menu").remove(),n(".sidebar_document .current_nav").after(e),n(".sidebar_document .current_menu ol").css({display:"block"}),n(".sidebar_document .current_menu .title_menu").css({display:"none"}))}document.addEventListener("scroll",function(){0<n(window).scrollTop()?n(".wrap_head").addClass("fixed"):n(".wrap_head").removeClass("fixed")}),n(".toggle_menu").click(function(){return n(this).toggleClass("active"),n(".wrap_nav").toggleClass("active"),n("body").toggleClass("deactive"),!1}),n(".sidebar_document").theiaStickySidebar({additionalMarginTop:95}),n(window).resize(function(){t()}),t(),n(document).on("click",".head_document .current_menu .title_menu",function(){n(this).toggleClass("active"),n(".head_document .current_menu ol").slideToggle()}),n(document).on("click",".current_menu a",function(e){e.preventDefault();e=n(this).attr("href");n("html, body").stop().animate({scrollTop:n(e).offset().top-90},500)}),n(".btn_filter").click(function(){return n(".wrap_widget").addClass("active"),n("body").addClass("deactive"),!1}),n(".close_filter").click(function(){return n(".wrap_widget").removeClass("active"),n("body").removeClass("deactive"),!1}),n(".more_btn").click(function(){return n(this).toggleClass("active"),n(this).parent().parent().find(".list_price.hidden").slideToggle(300,function(){n(this).is(":hidden")?n(this).parent().find(".more_btn").html("Развернуть"):n(this).parent().find(".more_btn").html("Свернуть")}),!1}),n(".item_faq .title_faq").click(function(){return n(this).toggleClass("active"),n(this).next(".text_faq").slideToggle(),!1}),990<document.documentElement.clientWidth&&n(".carousel_articles").slick({dots:!1,arrows:!0,infinite:!0,slidesToShow:4,slidesToScroll:1}),990<document.documentElement.clientWidth&&n(".online_jurist").slick({dots:!1,arrows:!0,infinite:!0,slidesToShow:3,slidesToScroll:1}),n(".tabs_category").on("click",".tab_category",function(){var e=n(".tabs_category .tab_category"),t=n(".content_category .wrap_category");return e.removeClass("active"),t.removeClass("active"),n(this).addClass("active"),t.eq(n(this).index()).addClass("active"),!1})});
+jQuery(function ($) {
+  	"use strict";
+
+	document.addEventListener('scroll', function () {
+		if ($(window).scrollTop() > 0) {
+		  $('.wrap_head').addClass('fixed');
+		} else {
+		  $('.wrap_head').removeClass('fixed');
+		}    
+	});
+
+	$(".toggle_menu").click(function () {
+		$(this).toggleClass("active");
+		$(".wrap_nav").toggleClass("active");
+		$("body").toggleClass("deactive");
+		return false;
+	});
+
+	$('.sidebar_document').theiaStickySidebar({
+        additionalMarginTop: 95
+    });
+
+	$(window).resize(function() {
+		sidebarDocument();
+	});
+	
+	function sidebarDocument(){
+		var width = $(window).width();      
+		if(width < 992){
+			var menuDocument = $(".head_document .current_menu");
+			if(sidebarDocument.length == 0){
+				var setMenuDocument = $(".sidebar_document .current_menu");
+				$(".sidebar_document .current_menu").remove();
+				$(".head_document").append(setMenuDocument);
+				$(".head_document .current_menu ol").css({'display':'none'});
+				$(".head_document .current_menu .title_menu").css({'display':'block'});
+			}
+		}else{
+			var menuDocument = $(".sidebar_document .current_menu");
+			if(menuDocument.length == 0){
+				var setMenuDocument = $(".head_document .current_menu");
+				$(".head_document .current_menu").remove();
+				$(".sidebar_document .current_nav").after(setMenuDocument);
+				$(".sidebar_document .current_menu ol").css({'display':'block'});  
+				$(".sidebar_document .current_menu .title_menu").css({'display':'none'});  
+			}
+
+		}
+	}
+	sidebarDocument();
+	$(document).on("click",".head_document .current_menu .title_menu",function(){   
+		$(this).toggleClass("active");
+		$(".head_document .current_menu ol").slideToggle(); 
+	});
+
+	$(document).on("click",".current_menu a",function(e){
+		e.preventDefault();
+		var anchor = $(this).attr('href');
+		$('html, body').stop().animate({
+			scrollTop: $(anchor).offset().top - 90
+		}, 500);
+	});
+
+
+	$(".btn_filter").click(function () {
+		$(".wrap_widget").addClass("active");
+		$("body").addClass("deactive");
+		return false;
+	});
+
+	$(".close_filter").click(function () {
+		$(".wrap_widget").removeClass("active");
+		$("body").removeClass("deactive");
+		return false;
+	});
+
+  	$('.more_btn').click(function(){
+    	$(this).toggleClass('active');
+			$(this).parent().parent().find('.list_price.hidden').slideToggle(300, function(){
+				if ($(this).is(':hidden')) {
+					$(this).parent().find('.more_btn').html('Развернуть');
+				} else {
+					$(this).parent().find('.more_btn').html('Свернуть');
+				}							
+			});		
+		return false;
+	});	
+
+	$(".item_faq .title_faq").click(function () {
+		$(this).toggleClass("active");
+		$(this).next(".text_faq").slideToggle();
+		return false;
+	});
+
+	if (document.documentElement.clientWidth > 990) {
+		$(".carousel_articles").slick({
+			dots: false,
+			arrows: true,
+			infinite: true,
+			slidesToShow: 4,
+			slidesToScroll: 1,
+		});
+	}
+
+	if (document.documentElement.clientWidth > 990) {
+		$(".online_jurist").slick({
+			dots: false,
+			arrows: true,
+			infinite: true,
+			slidesToShow: 3,
+			slidesToScroll: 1,
+		});
+	}
+
+	$(".tabs_category").on("click", ".tab_category", function () {
+		var tabs = $(".tabs_category .tab_category"),
+		  cont = $(".content_category .wrap_category");
+		tabs.removeClass("active");
+		cont.removeClass("active");
+		$(this).addClass("active");
+		cont.eq($(this).index()).addClass("active");
+		return false;
+	});
+
+  
+});
