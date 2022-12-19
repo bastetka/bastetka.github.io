@@ -22,6 +22,7 @@ jQuery(function ($) {
 
 	$(window).resize(function() {
 		sidebarDocument();
+		textCallback();
 	});
 	
 	function sidebarDocument(){
@@ -122,5 +123,26 @@ jQuery(function ($) {
 		return false;
 	});
 
+	$('.more_category a').click(function(){
+    	$(this).toggleClass('active');
+		$(this).parent().parent().find('.hidden_category').slideToggle(300, function(){
+			if ($(this).is(':hidden')) {
+				$(this).parent().find('.more_category a').html('Развернуть');
+			} else {
+				$(this).parent().find('.more_category a').html('Свернуть');
+			}							
+		});		
+		return false;
+	});	
+
+	function textCallback(){
+		var width = $(window).width();     
+		if(width < 651){
+			$(".form_callback form textarea").attr('placeholder', 'Опишите ваш вопрос/ситуацию своими словами, начиная с вопросительных вопросов: «Что», «Как», «Можно ли» и т.п.');
+		}else{
+			$(".form_callback form textarea").attr('placeholder', 'Введите вопрос');
+		}
+	}
+	textCallback();
   
 });
