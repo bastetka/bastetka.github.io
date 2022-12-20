@@ -23,6 +23,7 @@ jQuery(function ($) {
 	$(window).resize(function() {
 		sidebarDocument();
 		textCallback();
+		carouselCard();
 	});
 	
 	function sidebarDocument(){
@@ -92,6 +93,21 @@ jQuery(function ($) {
 		$(this).next(".text_faq").slideToggle();
 		return false;
 	});
+
+
+	function carouselCard(){
+		var width = $(window).width();      
+		if(width > 991){
+			$(".carousel_jurist").slick({
+				dots: false,
+				arrows: true,
+				infinite: false,
+				slidesToShow: 3,
+				slidesToScroll: 1,
+			});
+		}
+	}
+	carouselCard();
 
 	if (document.documentElement.clientWidth > 990) {
 		$(".carousel_articles").slick({
