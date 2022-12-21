@@ -9,6 +9,22 @@ jQuery(function ($) {
 		}    
 	});
 
+	document.addEventListener('scroll', function () {
+		if ($(window).scrollTop() > 143) {
+		  $('.nav_jurist').addClass('fixed');
+		} else {
+		  $('.nav_jurist').removeClass('fixed');
+		}    
+	});
+
+	$(document).on("click",".nav_jurist a",function(e){
+		e.preventDefault();
+		var anchor = $(this).attr('href');
+		$('html, body').stop().animate({
+			scrollTop: $(anchor).offset().top - 120
+		}, 500);
+	});
+
 	$(".toggle_menu").click(function () {
 		$(this).toggleClass("active");
 		$(".wrap_nav").toggleClass("active");
@@ -20,10 +36,15 @@ jQuery(function ($) {
         additionalMarginTop: 95
     });
 
+	$('.sibebar_jurist').theiaStickySidebar({
+        additionalMarginTop: 95
+    });
+
 	$(window).resize(function() {
 		sidebarDocument();
 		textCallback();
 		carouselCard();
+		carouselDocuments();
 	});
 	
 	function sidebarDocument(){
@@ -109,6 +130,24 @@ jQuery(function ($) {
 	}
 	carouselCard();
 
+	function carouselDocuments(){
+		var width = $(window).width();      
+		if(width > 991){
+			$(".carousel_documents").slick({
+				dots: false,
+				arrows: true,
+				infinite: false,
+				slidesToShow: 4,
+				slidesToScroll: 1,
+			});
+		}
+	}
+	carouselDocuments();
+
+	
+
+	
+
 	if (document.documentElement.clientWidth > 990) {
 		$(".carousel_articles").slick({
 			dots: false,
@@ -146,6 +185,18 @@ jQuery(function ($) {
 				$(this).parent().find('.more_category a').html('Развернуть');
 			} else {
 				$(this).parent().find('.more_category a').html('Свернуть');
+			}							
+		});		
+		return false;
+	});	
+
+	$('.more_case a').click(function(){
+    	$(this).toggleClass('active');
+		$(this).parent().parent().find('.list_case_hidden').slideToggle(300, function(){
+			if ($(this).is(':hidden')) {
+				$(this).parent().find('.more_case a').html('Полный список дел');
+			} else {
+				$(this).parent().find('.more_case a').html('Свернуть');
 			}							
 		});		
 		return false;
