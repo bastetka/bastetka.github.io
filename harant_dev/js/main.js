@@ -108,7 +108,7 @@ jQuery(function ($) {
 		return false;
 	});
 
-  	$('.more_btn').click(function(){
+  	$('.more_price .more_btn').click(function(){
     	$(this).toggleClass('active');
 			$(this).parent().parent().find('.list_price.hidden').slideToggle(300, function(){
 				if ($(this).is(':hidden')) {
