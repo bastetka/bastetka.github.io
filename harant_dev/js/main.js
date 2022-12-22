@@ -45,6 +45,7 @@ jQuery(function ($) {
 		textCallback();
 		carouselCard();
 		carouselDocuments();
+		carouselArticles();
 	});
 	
 	function sidebarDocument(){
@@ -130,6 +131,20 @@ jQuery(function ($) {
 	}
 	carouselCard();
 
+	function carouselArticles(){
+		var width = $(window).width();      
+		if(width > 991){
+			$(".carousel_articles").slick({
+				dots: false,
+				arrows: true,
+				infinite: false,
+				slidesToShow: 3,
+				slidesToScroll: 1,
+			});
+		}
+	}
+	carouselArticles();
+
 	function carouselDocuments(){
 		var width = $(window).width();      
 		if(width > 991){
@@ -138,7 +153,7 @@ jQuery(function ($) {
 				arrows: true,
 				infinite: false,
 				slidesToShow: 4,
-				slidesToScroll: 1,
+				slidesToScroll: 1
 			});
 		}
 	}
