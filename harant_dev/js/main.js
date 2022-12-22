@@ -32,6 +32,16 @@ jQuery(function ($) {
 		return false;
 	});
 
+	$(".tabs_category").on("click", ".tab_category", function () {
+		var tabs = $(".tabs_category .tab_category"),
+		  cont = $(".content_category .wrap_category");
+		tabs.removeClass("active");
+		cont.removeClass("active");
+		$(this).addClass("active");
+		cont.eq($(this).index()).addClass("active");
+		return false;
+	});
+
 	$('.sidebar_document').theiaStickySidebar({
         additionalMarginTop: 95
     });
@@ -182,16 +192,6 @@ jQuery(function ($) {
 			slidesToScroll: 1,
 		});
 	}
-
-	$(".tabs_category").on("click", ".tab_category", function () {
-		var tabs = $(".tabs_category .tab_category"),
-		  cont = $(".content_category .wrap_category");
-		tabs.removeClass("active");
-		cont.removeClass("active");
-		$(this).addClass("active");
-		cont.eq($(this).index()).addClass("active");
-		return false;
-	});
 
 	$('.more_category a').click(function(){
     	$(this).toggleClass('active');
