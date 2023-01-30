@@ -151,12 +151,12 @@
     .carousel .slick-arrow::before {
       display: none; }
     .carousel .slick-arrow.slick-prev {
-      background-image: url(../img/arr-prev.svg);
+      background-image: url(../img/icons/arr-prev.svg);
       background-repeat: no-repeat;
       background-position: center;
       left: 44%; }
     .carousel .slick-arrow.slick-next {
-      background-image: url(../img/arr-next.svg);
+      background-image: url(../img/icons/arr-next.svg);
       background-repeat: no-repeat;
       background-position: center;
       right: 44%; }
@@ -237,7 +237,7 @@
       content: '';
       width: 13px;
       height: 13px;
-      background: url(../img/star.svg) no-repeat;
+      background: url(../img/icons/star.svg) no-repeat;
       position: absolute;
       left: 0;
       top: 0; }
@@ -287,7 +287,7 @@
       content: '';
       width: 13px;
       height: 13px;
-      background: url(../img/verification.svg) no-repeat;
+      background: url(../img/icons/verification.svg) no-repeat;
       background-size: 100%;
       position: absolute;
       right: 0;
@@ -338,7 +338,7 @@
     content: '';
     width: 14px;
     height: 14px;
-    background: url(../img/map-marker.svg) no-repeat;
+    background: url(../img/icons/map-marker.svg) no-repeat;
     position: absolute;
     top: 2px;
     left: 0; }
@@ -346,7 +346,7 @@
     content: '';
     width: 14px;
     height: 14px;
-    background: url(../img/award.svg) no-repeat;
+    background: url(../img/icons/award.svg) no-repeat;
     position: absolute;
     top: 2px;
     left: 0; }
@@ -354,7 +354,7 @@
     content: '';
     width: 14px;
     height: 14px;
-    background: url(../img/notebooks.svg) no-repeat;
+    background: url(../img/icons/notebooks.svg) no-repeat;
     position: absolute;
     top: 2px;
     left: 0; }
@@ -395,7 +395,7 @@
       content: '';
       width: 12px;
       height: 12px;
-      background: url(../img/checkmark.svg) no-repeat;
+      background: url(../img/icons/checkmark.svg) no-repeat;
       background-size: 100%;
       position: absolute;
       top: 4px;
@@ -547,7 +547,7 @@
       content: '';
       width: 14px;
       height: 14px;
-      background: url(../img/arrow-down.svg) no-repeat;
+      background: url(../img/icons/arrow-down.svg) no-repeat;
       background-size: 100%;
       position: absolute;
       right: 0;
@@ -908,7 +908,7 @@
         content: '';
         width: 14px;
         height: 14px;
-        background: url(../img/arr-questions.svg) no-repeat;
+        background: url(../img/icons/arr-questions.svg) no-repeat;
         background-size: 100%;
         position: absolute;
         top: 2px;
@@ -1213,7 +1213,7 @@
     content: '';
     width: 18px;
     height: 18px;
-    background: url(../img/arr-faq.svg) no-repeat;
+    background: url(../img/icons/arr-faq.svg) no-repeat;
     background-size: 100%;
     position: absolute;
     right: 0;
@@ -1299,7 +1299,7 @@
       height: 44px;
       border: none;
       border-radius: 6px;
-      background-image: url(../img/arr-btn.svg);
+      background-image: url(../img/icons/arr-btn.svg);
       background-repeat: no-repeat;
       background-position: center;
       -webkit-box-flex: 0;
