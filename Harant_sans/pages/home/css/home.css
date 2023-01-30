@@ -256,6 +256,12 @@
   position: absolute;
   top: 0;
   right: 0; }
+  .rating_card.rating_green {
+    background: #41A040; }
+  .rating_card.rating_yellow {
+    background: #F2C94C; }
+  .rating_card.rating_gray {
+    background: #777E8C; }
 
 .text_card {
   -webkit-box-flex: 3;
