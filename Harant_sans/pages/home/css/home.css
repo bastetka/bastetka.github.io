@@ -241,6 +241,8 @@
       position: absolute;
       left: 0;
       top: 0; }
+  .review_card.not_review_card {
+    background: #F6F7F8; }
 
 .rating_card {
   width: 41px;
