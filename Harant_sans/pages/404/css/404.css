@@ -16,7 +16,8 @@ html {
     background: url(../img/bg-404.png) no-repeat;
     position: absolute;
     top: -77px;
-    left: 44%; }
+    left: 44%;
+    z-index: -1; }
 
 .content_404 h1 {
   font-family: 'PTSans-Bold', sans-serif;
