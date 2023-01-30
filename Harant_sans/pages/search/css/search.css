@@ -1455,7 +1455,8 @@
   .form_filter .checkbox label {
     padding-left: 30px; }
   .form_filter .checkbox span {
-    font-family: 'Rubik', sans-serif; }
+    font-family: 'PTSans', sans-serif;
+    font-weight: 400; }
   .jurist_search .card_jurist {
     margin-bottom: 16px; }
   .jurist_search .head_card {
