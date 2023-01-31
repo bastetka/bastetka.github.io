@@ -1,6 +1,18 @@
 jQuery(function ($) {
     "use strict";
 
+		$('.more_description').click(function(){
+			$(this).toggleClass('active');
+					$(this).parent().parent().find('.description_hide').slideToggle(300, function(){
+							if ($(this).is(':hidden')) {
+									$(this).parent().find('.more_description').html('Читать еще');
+							} else {
+									$(this).parent().find('.more_description').html('Скрыть');
+							}							
+					});		
+			return false;
+	}); 
+
     $('.more_price .more_btn').click(function(){
         $(this).toggleClass('active');
             $(this).parent().parent().find('.list_price.hidden').slideToggle(300, function(){

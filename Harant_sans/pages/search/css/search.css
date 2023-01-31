@@ -320,7 +320,8 @@
 .jurist_search .photo_card {
   width: 100px;
   height: 100px;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  display: block; }
 
 .jurist_search .rating_card {
   position: static;
@@ -367,8 +368,28 @@
     top: 4px; }
 
 .jurist_search .description_card {
-  line-height: 160%;
-  margin-bottom: 14px; }
+  height: auto;
+  position: relative;
+  margin-bottom: 14px;
+  position: relative; }
+  .jurist_search .description_card .description_hide {
+    display: none;
+    padding-bottom: 20px; }
+  .jurist_search .description_card p {
+    margin: 0;
+    line-height: 160%;
+    font-size: 14px;
+    display: inline; }
+  .jurist_search .description_card .more_description {
+    color: #1E2139;
+    text-decoration: none;
+    margin-left: 10px; }
+    .jurist_search .description_card .more_description:hover {
+      text-decoration: underline; }
+    .jurist_search .description_card .more_description.active {
+      position: absolute;
+      bottom: 5px;
+      right: 0; }
 
 .jurist_search .list_price {
   margin: 0;
