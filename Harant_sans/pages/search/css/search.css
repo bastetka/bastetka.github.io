@@ -327,6 +327,9 @@
   position: static;
   margin: 0 auto 5px; }
 
+.jurist_search .review_card {
+  text-decoration: none; }
+
 .jurist_search .profession_card {
   font-family: 'PTSans-Bold', sans-serif;
   font-weight: 700;
