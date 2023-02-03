@@ -19,6 +19,17 @@ jQuery(function ($) {
         return false;
     });
 
+    $(".tabs_board").on("click", ".tab_board", function () {
+        var tabs = $(".tabs_board .tab_board"),
+            cont = $(".inner_board .wrap_board");
+        tabs.removeClass("active");
+        cont.removeClass("active");
+        $(this).addClass("active");
+        cont.eq($(this).index()).addClass("active");
+        return false;
+    });
+
+
     $('.more_description').click(function(){
         $(this).toggleClass('active');
                 $(this).parent().parent().find('.description_hide').slideToggle(300, function(){
