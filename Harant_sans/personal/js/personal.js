@@ -66,6 +66,47 @@ jQuery(function ($) {
         return false;
     });
 
+    $('.popup_open').click(function() {
+        $('.popup_fade').fadeIn();
+        $('body').addClass('deactive');
+        return false;
+    });	
+    
+    $('.popup_close').click(function() {
+        $(this).parents('.popup_fade').fadeOut();
+        $('body').removeClass('deactive');
+        return false;
+    });
+    
+    $(document).keydown(function(e) {
+    if (e.keyCode === 27) {
+        e.stopPropagation();
+        $('.popup_fade').fadeOut();
+    }
+    });
+    
+    $('.popup_fade').click(function(e) {
+    if ($(e.target).closest('.popup').length == 0) {
+        $(this).fadeOut();
+        $('body').removeClass('deactive');					
+    }
+    });
+
+    $(window).resize(function() {
+		dropMenuBoard();
+	});
+
+    function dropMenuBoard(){
+		var width = $(window).width();      
+		if(width < 1365){
+            $("tabs_board").click(function () {
+                $(this).toggleClass("active");
+                return false;
+            });
+		}
+	}
+	dropMenuBoard();
+
     $('#slider_answer').slider({
         range: true,
         min: 0,
