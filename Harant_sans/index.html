@@ -7,6 +7,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="stylesheet" href="assets/css/libs.min.css">
     <link rel="stylesheet" href="assets/css/custom.css">
+    <style>
+        .wrap_links {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 80px 0;
+        }
+        .item_links {
+            width: 50%;
+        }
+        ul {
+            padding: 0;
+            margin: 0;
+        }
+        ul li {
+            list-style-type: none;
+            margin-top: 10px;
+        }
+        ul li a {
+            text-decoration: none;
+            color: #1E2139;
+        }
+    </style>
 </head>
 <body>
     <header class="head">
@@ -51,13 +73,29 @@
     </header>
     <main>
         <div class="wrapper">
-            <h2>Страницы</h2>
-            <ul>
-                <li><a href="pages/home/home.html">Главная</a></li>
-                <li><a href="pages/search/search.html">Найти юриста</a></li>
-                <li><a href="pages/document/document.html">Документы</a></li>
-                <li><a href="pages/404/404.html">Страница ошибки</a></li>
-            </ul>
+            <div class="wrap_links">
+                <div class="item_links">
+                    <h2>Страницы</h2>
+                    <ul>
+                        <li><a href="pages/home/home.html" target="_blank">Главная</a></li>
+                        <li><a href="pages/search/search.html" target="_blank">Найти юриста</a></li>
+                        <li><a href="pages/lawyer/lawyer.html" target="_blank">Карточка юриста</a></li>
+                        <li><a href="pages/document/document.html" target="_blank">Документы</a></li>
+                        <li><a href="pages/404/404.html" target="_blank">Страница ошибки</a></li>
+                    </ul>
+                </div>
+                <div class="item_links">
+                    <h2>Личный кабинет</h2>
+                    <ul>
+                        <li><a href="personal/board.html" target="_blank">Уведомления</a></li>
+                        <li><a href="personal/my-properties.html" target="_blank"> Профиль юриста</a></li>
+                        <li><a href="personal/reviews.html" target="_blank">Отзывы</a></li>
+                        <li><a href="personal/reviews-not.html" target="_blank">Отзывы (создать профиль)</a></li>
+                        <li><a href="personal/saved-search.html" target="_blank">Публикации</a></li>
+                        <li><a href="personal/edit-profile.html" target="_blank">Изменить пароль</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </main>
     <footer>
