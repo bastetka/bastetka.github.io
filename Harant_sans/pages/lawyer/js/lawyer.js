@@ -90,6 +90,14 @@ jQuery(function ($) {
 				infinite: false,
 				slidesToShow: 3,
 				slidesToScroll: 1,
+        responsive: [
+          {
+            breakpoint: 1367,
+            settings: {
+              slidesToShow: 2,
+            },
+          }
+        ]
 			});
 		}
 	}

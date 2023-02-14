@@ -317,6 +317,40 @@
                             </div>
                             <div class="analytics_jurist">
                                 <h2>Аналитика</h2>
+                                <div class="diagram_analytics">
+                                    <div class="title_diagram">Диаграмма по категориям дел</div>
+                                    <div class="wrap_diagram">
+                                        <div class="diagram">
+                                            <img src="img/diagram.svg" alt="Alt">
+                                        </div>
+                                        <ul class="diagram_legend">
+                                            <li><span><span class="view_legend" style="background-color: #777E8C;"></span> Кредитные вопросы и споры</span> <span>35%</span></li>
+                                            <li><span><span class="view_legend" style="background-color: #56CCF2;"></span> Арбитраж</span> <span>34%</span></li>
+                                            <li><span><span class="view_legend" style="background-color: #6FCF97;"></span> Защита прав потребителя</span> <span>12%</span></li>
+                                            <li><span><span class="view_legend" style="background-color: #F2C94C;"></span> Налоговое право</span> <span>10%</span></li>
+                                            <li><span><span class="view_legend" style="background-color: #F2994A;"></span> Жилищные вопросы</span> <span>8%</span></li>
+                                            <li><span><span class="view_legend" style="background-color: #FF5555;"></span> ЖКХ</span> <span>4%</span></li>
+                                            <li><span><span class="view_legend" style="background-color: #8085B7;"></span> Семейное право</span> <span>3%</span></li>
+                                            <li><span><span class="view_legend" style="background-color: #353961;"></span> Взыскание задолженности</span> <span>3%</span></li>
+                                            <li><span><span class="view_legend" style="background-color: #966DB6;"></span> Возмещение ущерба</span> <span>3%</span></li>
+                                            <li><span><span class="view_legend" style="background-color: #531C7E;"></span> Автоюрист</span> <span>2%</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="graph_analytics">
+                                    <div class="item_gpaph">
+                                        <div class="title_graph">Активность юриста<br> в судах</div>
+                                        <img src="img/graph-1.svg" alt="Alt">
+                                    </div>
+                                    <div class="item_gpaph">
+                                        <div class="title_graph">Рейтинг юриста<br> на HARANT</div>
+                                        <img src="img/graph-2.svg" alt="Alt">
+                                    </div>
+                                    <div class="item_gpaph">
+                                        <div class="title_graph">График количества<br> дел по годам</div>
+                                        <img src="img/graph-3.svg" alt="Alt">
+                                    </div>
+                                </div>
                             </div> 
                             <div id="contacts_jurist" class="contacts_jurist">
                                 <div class="title_contacts">
@@ -439,16 +473,112 @@
                         </div>
                     </div>
                     <div id="reviews_jurist" class="reviews_jurist">
-                        <h2>Отзывы(36)</h2>
+                        <div class="wrap_title">
+                            <h2>Отзывы(36)</h2>
+                            <div class="rating_reviews">
+                                <div class="item_rating">
+                                    <img src="img/star.svg" alt="Alt">
+                                </div>
+                                <div class="item_rating">
+                                    <img src="img/star.svg" alt="Alt">
+                                </div>
+                                <div class="item_rating">
+                                    <img src="img/star.svg" alt="Alt">
+                                </div>
+                                <div class="item_rating">
+                                    <img src="img/star-not.svg" alt="Alt">
+                                </div>
+                                <div class="item_rating">
+                                    <img src="img/star-not.svg" alt="Alt">
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="descr_reviews">Почему нашим отзывам можно верить?</a>
                         <form action="" class="form_reviews">
                             <div class="rating_form">
                                 <span>Оцените юриста</span>
+                                <div class="rating_group">
+                                    <input name="fst" value="0" type="radio" disabled checked />   
+                                    <label for="fst-1"></label>
+                                    <input name="fst" id="fst-1" value="1" type="radio" />
+                                    <label for="fst-2"></label>
+                                    <input name="fst" id="fst-2" value="2" type="radio" />   
+                                    <label for="fst-3"></label>
+                                    <input name="fst" id="fst-3" value="3" type="radio" />       
+                                    <label for="fst-4"></label>
+                                    <input name="fst" id="fst-4" value="4" type="radio" />  
+                                    <label for="fst-5"></label>
+                                    <input name="fst" id="fst-5" value="5" type="radio" />
+                                </div>
                             </div>
                             <textarea name="" placeholder="Напишите отзыв о работе юриста"></textarea>
                             <div class="wrap_form">
-                                <div class="item_form">
-                                    <div class="title_form"></div>
+                                <div class="item_form plus_form">
+                                    <div class="title_form">Плюсы</div>
+                                    <div class="checkbox_form">
+                                        <div class="checkbox">
+                                            <input type="checkbox" name="happy" value="yes" id="1">
+                                            <label for="1"><span>Рекомендую</span></label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <input type="checkbox" name="happy" value="yes" id="2">
+                                            <label for="2"><span>Стоимость услуг</span></label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <input type="checkbox" name="happy" value="yes" id="3" checked>
+                                            <label for="3"><span>Быстрое выполнение работы</span></label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <input type="checkbox" name="happy" value="yes" id="4">
+                                            <label for="4"><span>Грамотный специалист</span></label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <input type="checkbox" name="happy" value="yes" id="5">
+                                            <label for="5"><span>Плюсов нет</span></label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <input type="checkbox" name="happy" value="yes" id="6">
+                                            <label for="6"><span>Консультация</span></label>
+                                        </div>
+                                    </div>
                                 </div>
+                                <div class="item_form minus_form">
+                                    <div class="title_form">Минусы</div>
+                                    <div class="checkbox_form">
+                                        <div class="checkbox">
+                                            <input type="checkbox" name="happy" value="yes" id="7">
+                                            <label for="7"><span>Не качественное выполнение работы</span></label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <input type="checkbox" name="happy" value="yes" id="8">
+                                            <label for="8"><span>Берет деньги и пропадает</span></label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <input type="checkbox" name="happy" value="yes" id="9">
+                                            <label for="9"><span>Не рекомендую</span></label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <input type="checkbox" name="happy" value="yes" id="10">
+                                            <label for="10"><span>Нарушение условий договора</span></label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <input type="checkbox" name="happy" value="yes" id="11">
+                                            <label for="11"><span>Услуга не оказана</span></label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <input type="checkbox" name="happy" value="yes" id="12">
+                                            <label for="12"><span>Высокие цены</span></label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <input type="checkbox" name="happy" value="yes" id="13"checked>
+                                            <label for="13"><span>Минусов нет</span></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="button_form">
+                                <button class="btn">Добавить отзыв</button>
+                                <p>Нажимая на “Добавить отзыв”, вы принимаете пользовательское соглашение и<br> политику конфиденциальности</p>
                             </div>
                         </form>
                         <div class="wrap_reviews">
@@ -745,7 +875,6 @@
                                 <div class="bottom_card">
                                     <ul class="advan_card">
                                         <li>Удаленная помощь</li>
-                                        <li>24/7</li>
                                         <li>Выезд к клиенту</li>
                                     </ul>  
                                     <div class="buttons_card">
@@ -783,7 +912,6 @@
                                 <div class="bottom_card">
                                     <ul class="advan_card">
                                         <li>Удаленная помощь</li>
-                                        <li>24/7</li>
                                         <li>Выезд к клиенту</li>
                                     </ul>  
                                     <div class="buttons_card">
@@ -821,7 +949,6 @@
                                 <div class="bottom_card">
                                     <ul class="advan_card">
                                         <li>Удаленная помощь</li>
-                                        <li>24/7</li>
                                         <li>Выезд к клиенту</li>
                                     </ul>  
                                     <div class="buttons_card">
@@ -859,7 +986,6 @@
                                 <div class="bottom_card">
                                     <ul class="advan_card">
                                         <li>Удаленная помощь</li>
-                                        <li>24/7</li>
                                         <li>Выезд к клиенту</li>
                                     </ul>  
                                     <div class="buttons_card">
@@ -959,7 +1085,6 @@
             <div class="copyright">Copyright © HARANT, 2022</div>
         </div>
     </footer>
-
     <script src="../../assets/js/jquery-2.1.3.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/ResizeSensor.min.js"></script>
