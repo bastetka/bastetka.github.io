@@ -15,30 +15,6 @@ jQuery(function ($) {
       $('html, body').stop().animate({
           scrollTop: $(anchor).offset().top - 120
       }, 500);
-  });
-
-  document.addEventListener('scroll', function () {
-		if ($(window).scrollTop() > 60) {
-		  $('.nav_jurist').addClass('fixed');
-		} else {
-		  $('.nav_jurist').removeClass('fixed');
-		}    
-	});
-
-  $(".carousel_documents").slick({
-      dots: false,
-      arrows: true,
-      infinite: false,
-      slidesToShow: 4,
-      slidesToScroll: 1,
-      responsive: [
-          {
-            breakpoint: 1366,
-            settings: {
-              slidesToShow: 3,
-            },
-          }
-      ]
   }); 
 
   $('.more_case a').click(function(){
@@ -78,8 +54,55 @@ jQuery(function ($) {
   });
 
   $(window).resize(function() {
+		navFixed();
+		carouselDocuments();
 		carouselArticles();
+    sidebarFixed();
 	});
+
+  function navFixed(){
+		var width = $(window).width();      
+		if(width > 991){
+			document.addEventListener('scroll', function () {
+        if ($(window).scrollTop() > 60) {
+          $('.nav_jurist').addClass('fixed');
+        } else {
+          $('.nav_jurist').removeClass('fixed');
+        }    
+      });
+		} else {
+      document.addEventListener('scroll', function () {
+        if ($(window).scrollTop() > 350) {
+          $('.nav_jurist').addClass('fixed');
+        } else {
+          $('.nav_jurist').removeClass('fixed');
+        }    
+      });
+    }
+	}
+	navFixed();
+
+  function carouselDocuments(){
+		var width = $(window).width();      
+		if(width > 991){
+			$(".carousel_documents").slick({
+        dots: false,
+        arrows: true,
+        infinite: false,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        responsive: [
+          {
+            breakpoint: 1366,
+            settings: {
+              slidesToShow: 3,
+            },
+          }
+        ]
+    });
+    }
+	}
+	carouselDocuments();
 
   function carouselArticles(){
 		var width = $(window).width();      
@@ -90,21 +113,16 @@ jQuery(function ($) {
 				infinite: false,
 				slidesToShow: 3,
 				slidesToScroll: 1,
-        responsive: [
-          {
-            breakpoint: 1367,
-            settings: {
-              slidesToShow: 2,
-            },
-          }
-        ]
 			});
 		}
 	}
 	carouselArticles();
   
-  $('.sibebar_jurist').theiaStickySidebar({
-    additionalMarginTop: 95
-});
+  function sidebarFixed(){
+		$('.sibebar_jurist').theiaStickySidebar({
+      additionalMarginTop: 95
+  });
+	}
+	sidebarFixed();
 
 });
