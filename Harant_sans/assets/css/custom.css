@@ -132,7 +132,8 @@ body {
   z-index: 10; }
   .wrap_head.fixed {
     background: #ffffff;
-    border-bottom: 1px solid #ebebeb; }
+    border-bottom: 1px solid #ebebeb;
+    z-index: 999; }
 
 .nav_head {
   display: -webkit-box;
