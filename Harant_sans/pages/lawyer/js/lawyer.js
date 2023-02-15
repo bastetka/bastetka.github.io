@@ -113,6 +113,14 @@ jQuery(function ($) {
 				infinite: false,
 				slidesToShow: 3,
 				slidesToScroll: 1,
+        responsive: [
+          {
+            breakpoint: 1366,
+            settings: {
+              slidesToShow: 2,
+            },
+          }
+        ]
 			});
 		}
 	}
