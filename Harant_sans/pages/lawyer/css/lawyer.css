@@ -1,3 +1,7 @@
+body {
+  font-family: 'PTSans', sans-serif;
+}
+
 .wrap_jurist {
   display: -webkit-box;
   display: -ms-flexbox;
