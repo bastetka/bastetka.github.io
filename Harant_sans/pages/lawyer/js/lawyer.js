@@ -60,6 +60,32 @@ jQuery(function ($) {
     return false;
   });
 
+  $('.open_popup').click(function() {
+    $('.fade_popup').show();
+    $('body').addClass('deactive');
+    return false;
+  });	
+  
+  $('.close_popup').click(function() {
+    $(this).parents('.fade_popup').hide();
+    $('body').removeClass('deactive');
+    return false;
+  });
+ 
+  $(document).keydown(function(e) {
+    if (e.keyCode === 27) {
+      e.stopPropagation();
+      $('.fade_popup').hide();
+    }
+  });
+  
+  $('.fade_popup').click(function(e) {
+    if ($(e.target).closest('.popup').length == 0) {
+      $(this).hide();
+      $('body').removeClass('deactive');					
+    }
+  });
+
   $(window).resize(function() {
 		navFixed();
 		carouselDocuments();
