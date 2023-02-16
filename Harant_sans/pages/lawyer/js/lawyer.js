@@ -3,9 +3,16 @@ jQuery(function ($) {
 
   $(".btn_menu").click(function () {
 		$(this).toggleClass("active");
-		$(".dots_menu").slideToggle("active");
+		$(".dots_menu").slideToggle();
 		return false;
 	});
+
+  $(document).click(function (e) {
+    if ($(e.target).closest(".dots_menu").length) {
+        return;
+    }
+    $(".dots_menu").slideUp();
+  });
 
   $(document).on("click",".nav_jurist a",function(e){
       e.preventDefault();
