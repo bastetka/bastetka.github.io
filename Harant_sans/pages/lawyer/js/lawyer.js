@@ -60,6 +60,18 @@ jQuery(function ($) {
     return false;
   });
 
+  $('.more_reviews a').click(function(){
+    $(this).toggleClass('active');
+    $('.hidden_reviews').slideToggle(300, function(){
+        if ($(this).is(':hidden')) {
+            $('.more_reviews a').html('Показать еще');
+        } else {
+            $('.more_reviews a').html('Свернуть');
+        }							
+    });		
+    return false;
+  });
+
   $('.open_popup').click(function() {
     $('.fade_popup').show();
     $('body').addClass('deactive');
