@@ -128,7 +128,7 @@ jQuery(function ($) {
   
   function sidebarFixed(){
 		$('.sibebar_jurist').theiaStickySidebar({
-      additionalMarginTop: 95
+      additionalMarginTop: 62
   });
 	}
 	sidebarFixed();
