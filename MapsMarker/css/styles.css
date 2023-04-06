@@ -1,0 +1,73 @@
+@font-face {
+  font-family: 'OpenGostTypeATT';
+  src: url("../fonts/OpenGostTypeATT.woff2") format("woff2"), url("../fonts/OpenGostTypeATT.woff") format("woff"), url("../fonts/OpenGostTypeATT.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  position: relative; }
+
+.map {
+  width: 100vw;
+  height: 80vh;
+  overflow: hidden; }
+  .map__wrap {
+    height: 145%;
+    width: 100%;
+    border: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1; }
+
+.popup-info-substrate, .marker-info__bg-wrap, .poi-info-window::before {
+  width: calc(100% + 53px);
+  height: calc(100% + 18px);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  overflow: hidden; }
+
+.marker-content {
+  display: none; }
+
+.marker-info {
+  padding: 17px 0; }
+
+.marker-info__image img {
+  max-width: 100%;
+}
+
+.marker-info__text {
+  font-size: 16px;
+  padding: 20px 0 10px;
+}
+
+.gm-style .gm-style-iw-c {
+  width: 600px !important;
+  padding: 0 0 20px 20px !important;
+  
+}
+
+.gm-style .gm-style-iw-d {
+  //padding: 0 !important;
+}
+
+
+
+
+.gm-style .gm-style-iw-tc {
+  display: none;
+}
